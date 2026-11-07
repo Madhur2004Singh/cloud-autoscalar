@@ -88,21 +88,30 @@ cloud-autoscaler/
 │       ├── prediction_results.csv
 │       ├── actual_vs_predicted.png
 │       ├── scenario_prediction_comparison.png
-│       └── feature_importance.png
+│       ├── feature_importance.png
+│       ├── infrastructure_metrics.csv
+│       ├── server_metrics.csv
+│       ├── cpu_utilization_comparison.png
+│       ├── active_server_load.png
+│       └── infrastructure_overload.png
 ├── models/
 │   ├── __init__.py
 │   ├── predictor.py
 │   └── random_forest_model.joblib
 ├── simulation/
 │   ├── __init__.py
-│   └── workload_generator.py
+│   ├── workload_generator.py
+│   ├── cloud_simulator.py
+│   └── metrics.py
 ├── tests/
 │   ├── __init__.py
 │   ├── test_workload_generator.py
-│   └── test_predictor.py
+│   ├── test_predictor.py
+│   └── test_cloud_simulator.py
 ├── .gitignore
 ├── main.py
 ├── train_model.py
+├── run_infrastructure_simulation.py
 ├── README.md
 └── requirements.txt
 ```
@@ -279,6 +288,106 @@ print(f"Predicted viewers at minute 35: {predicted_viewers}")
 ### 11. Running the Automated Test Suite
 
 Run all Stage A and Stage B unit tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+---
+
+## Stage C: Simulated Cloud Infrastructure
+
+### 1. Objective and Architecture
+
+Stage C provides a deterministic, Python-based discrete-time simulation of cloud infrastructure designed to serve incoming live-broadcast concurrent viewership.
+
+The infrastructure simulation is intentionally decoupled from autoscaling policy decision-making:
+- **Stage C Scope:** Models simulated server nodes, load balancing, CPU and memory utilization, resource overload detection, and explicit lifecycle management controls (`add_server`, `remove_server`).
+- **Decoupled Architecture:** Infrastructure mechanisms are exposed via a clean simulation API (`step()`). In Stage D, proactive and reactive autoscalers will interface with this exact API to decide *when* and *how many* servers to scale.
+
+### 2. Server Configuration Defaults
+
+Infrastructure parameters are configurable via `ServerConfig`:
+
+| Parameter | Default Value | Description |
+|---|---:|---|
+| `capacity_per_server` | 1,000 viewers | Maximum nominal viewer capacity per server node |
+| `initial_servers` | 2 servers | Baseline server pool size at simulation initialization |
+| `min_servers` | 2 servers | Strict lower bound enforced on the active server pool |
+| `max_servers` | 30 servers | Strict upper bound enforced on the active server pool |
+| `total_memory_gb` | 8.0 GB | Total simulated physical RAM per server node |
+| `baseline_memory_gb` | 1.0 GB | Static OS and background runtime memory footprint |
+| `memory_per_viewer_mb` | 4.0 MB | Additional memory allocated per active connected viewer |
+
+### 3. Load Distribution Mechanism
+
+For each simulation interval, incoming viewers $V(t)$ are distributed across $N$ active servers deterministically and evenly:
+
+$$\text{base} = \lfloor V(t) / N \rfloor, \quad \text{remainder} = V(t) \pmod N$$
+
+- The first $\text{remainder}$ servers receive $\text{base} + 1$ viewers.
+- The remaining servers receive $\text{base}$ viewers.
+- **Guarantee:** $\sum_{i=1}^N \text{assigned\_viewers}_i = V(t)$ strictly holds, and $|\text{viewers}_i - \text{viewers}_j| \le 1$.
+- Viewers are never discarded when server capacity is exceeded; surplus load continues onto the servers to accurately capture resource stress.
+
+### 4. CPU and Memory Utilisation Models
+
+#### CPU Utilisation Model:
+$$\text{CPU utilisation (\%)} = \left(\frac{\text{assigned viewers}}{\text{capacity per server}}\right) \times 100$$
+- Uncapped metric: Values $>100\%$ remain visible to reflect server CPU stress.
+
+#### Memory Utilisation Model:
+$$\text{Memory used (GB)} = \text{baseline\_memory\_gb} + \left(\text{assigned viewers} \times \frac{\text{memory\_per\_viewer\_mb}}{1024}\right)$$
+$$\text{Memory utilisation (\%)} = \left(\frac{\text{Memory used (GB)}}{\text{total\_memory\_gb}}\right) \times 100$$
+- Illustrative memory formulation capturing baseline OS overhead plus linear per-session stream buffering.
+
+#### Overload Detection:
+- A server is marked **`overloaded = True`** when either its CPU utilization or Memory utilization exceeds $100\%$.
+- The infrastructure state is marked **`overload_status = True`** if one or more active servers are overloaded.
+
+### 5. Server Management Interface
+
+The `CloudSimulator` exposes explicit lifecycle methods:
+- `add_server() -> SimulatedServer`: Adds an active server with a unique sequential ID (`server-1`, `server-2`, ...). Raises `ValueError` if `max_servers` is reached.
+- `remove_server(server_id: Optional[str] = None) -> SimulatedServer`: Decommissions an active server (LIFO by default). Raises `ValueError` if `min_servers` boundary is reached.
+- `get_active_servers() -> List[SimulatedServer]`: Returns the ordered pool of active servers.
+- `step(viewers: int, minute: int) -> Tuple[InfrastructureMetrics, List[ServerMetrics]]`: Executes one discrete minute of simulation.
+- `reset_simulation_state()`: Restores the server pool to `initial_servers` and clears historical workloads.
+
+### 6. Fixed-Infrastructure Simulation Experiment
+
+Running the four 120-minute Stage A scenarios through a fixed 2-server infrastructure pool (total capacity = 2,000 viewers) demonstrates the necessity of autoscaling:
+
+| Scenario Name | Duration | Peak Viewers | Overloaded Minutes (%) | Avg CPU (%) | Max CPU (%) | Avg Memory (%) | Max Memory (%) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **Normal Traffic** | 120 min | 8,994 | 120 (100.0%) | 298.6% | 449.7% | 158.3% | 232.1% |
+| **Sudden Traffic Spike** | 120 min | 28,065 | 118 (98.3%) | 294.6% | 1,403.3% | 156.4% | 697.7% |
+| **Peak Broadcasting Event** | 120 min | 55,329 | 119 (99.2%) | 1,738.3% | 2,766.5% | 861.3% | 1,363.3% |
+| **Event Ending** | 120 min | 50,203 | 120 (100.0%) | 1,500.7% | 2,510.2% | 745.3% | 1,238.2% |
+
+### 7. How to Run the Infrastructure Simulation
+
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Execute Stage C simulation pipeline
+python run_infrastructure_simulation.py
+```
+
+### 8. Output Datasets and Visualizations
+
+- **Datasets (`data/processed/`):**
+  - [`infrastructure_metrics.csv`](file:///home/madhur/Documents/Projects/cloud-autoscaler/data/processed/infrastructure_metrics.csv): 480 minute-by-minute aggregate records across all scenarios.
+  - [`server_metrics.csv`](file:///home/madhur/Documents/Projects/cloud-autoscaler/data/processed/server_metrics.csv): 960 per-server utilization records across all scenarios.
+- **Visualizations (`data/processed/`):**
+  - [`cpu_utilization_comparison.png`](file:///home/madhur/Documents/Projects/cloud-autoscaler/data/processed/cpu_utilization_comparison.png): Average CPU utilization across all scenarios with 100% threshold.
+  - [`active_server_load.png`](file:///home/madhur/Documents/Projects/cloud-autoscaler/data/processed/active_server_load.png): Individual server CPU load breakdown for Sudden Spike and Normal Traffic.
+  - [`infrastructure_overload.png`](file:///home/madhur/Documents/Projects/cloud-autoscaler/data/processed/infrastructure_overload.png): Overloaded server count over time across all 4 scenarios.
+
+### 9. Running the Complete Automated Test Suite
+
+Run all Stage A, Stage B, and Stage C tests (49 total):
 
 ```bash
 python -m unittest discover -s tests -v
