@@ -84,15 +84,25 @@ cloud-autoscaler/
 │       ├── sudden_spike_workload.png
 │       ├── peak_event_workload.png
 │       ├── event_ending_workload.png
-│       └── all_scenarios_comparison.png
+│       ├── all_scenarios_comparison.png
+│       ├── prediction_results.csv
+│       ├── actual_vs_predicted.png
+│       ├── scenario_prediction_comparison.png
+│       └── feature_importance.png
+├── models/
+│   ├── __init__.py
+│   ├── predictor.py
+│   └── random_forest_model.joblib
 ├── simulation/
 │   ├── __init__.py
 │   └── workload_generator.py
 ├── tests/
 │   ├── __init__.py
-│   └── test_workload_generator.py
+│   ├── test_workload_generator.py
+│   └── test_predictor.py
 ├── .gitignore
 ├── main.py
+├── train_model.py
 ├── README.md
 └── requirements.txt
 ```
@@ -124,6 +134,151 @@ python main.py
 ### 8. Running Automated Tests
 
 Run the unit test suite covering all Stage A behavioral requirements:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+---
+
+## Stage B: ML-Based Workload Prediction Engine
+
+### 1. Objective and Architecture
+
+Stage B develops an automated machine learning forecasting engine that predicts concurrent viewer demand $V(t + 5)$ five minutes into the future, using only telemetry available at or before time $t$. This proactive lead time allows cloud resource controllers to initiate server spin-up procedures before traffic surges cause Quality of Service (QoS) degradation.
+
+### 2. Why Random Forest Regressor Was Selected
+
+A `RandomForestRegressor` ensemble is selected for the predictive core because:
+- **Non-Linear Dynamics:** Viewership surges exhibit sharp transitions, sigmoidal plateaus, and non-linear harmonic decay that linear regressors fail to capture accurately.
+- **Robustness to Scale and Outliers:** Tree-based ensembles do not require feature normalization or standard scaling across heterogeneous inputs (e.g., raw viewer counts vs. growth rates).
+- **Interpretability:** Provides native feature importance metrics based on Gini impurity reduction.
+- **Ensemble Stability:** Averaging across 200 de-correlated decision trees reduces variance and limits overfitting to random noise fluctuations.
+
+### 3. Prediction Horizon
+
+- **Horizon ($H = 5$ minutes):** At observation minute $t$, the model predicts viewership at minute $t + 5$.
+- In cloud autoscaling architectures, virtual machines require initialization time (OS boot, container pulling, readiness checks). A 5-minute prediction horizon provides the necessary buffer for proactive server provisioning.
+- The prediction horizon is configurable across the preprocessing and predictor APIs.
+
+### 4. Historical Features
+
+All features are strictly derived from historical or current observations ($t \le \text{prediction time}$):
+
+| Feature Name | Description | Window / Formulation |
+|---|---|---|
+| `viewers` | Current concurrent viewer count | Observation at minute $t$ |
+| `viewers_lag_1` | Viewers 1 minute ago | $V(t - 1)$ |
+| `viewers_lag_2` | Viewers 2 minutes ago | $V(t - 2)$ |
+| `viewers_lag_5` | Viewers 5 minutes ago | $V(t - 5)$ |
+| `viewers_rolling_mean_5` | Rolling average over previous 5 minutes | $\frac{1}{5} \sum_{k=0}^{4} V(t - k)$ (includes minute $t$) |
+| `viewers_rolling_std_5` | Rolling standard deviation over previous 5 minutes | Standard deviation of $\{V(t-4), \dots, V(t)\}$ |
+| `viewer_growth_rate` | Recent minute-over-minute viewer velocity | $V(t) - V(t - 1)$ |
+| `minute` | Current simulation time index | Minute $t$ |
+| `event_active` | Indicator if a major event/spike is active at time $t$ | $1$ if active at minute $t$, else $0$ |
+
+### 5. Chronological Purged Split & Leakage Prevention
+
+- **Independent Scenario Processing:** Feature extraction, lag calculation, and rolling windows are computed for each scenario independently. The final observations of one scenario never blend into the starting history of another.
+- **Purged Chronological Split (Purge Gap = 5 minutes):** For each scenario of 110 aligned observations (minutes 5 to 114):
+  - Training feature window: minutes 5 to 87 (83 observations per scenario, 332 total).
+  - Training target window: minutes 10 to 92 ($\max = 92$).
+  - Purged embargo gap: minutes 88 to 92 (5 observations removed from training per scenario).
+  - Test feature window: minutes 93 to 114 (22 observations per scenario, 88 total; $\min = 93$).
+  - Test target window: minutes 98 to 119.
+- **Strict Leakage Prevention Condition:**
+  $$\max(\text{training target minute}) = 92 < 93 = \min(\text{test feature minute})$$
+  $$\max(\text{training target timestamp}) = \text{01:32:00} < \text{01:33:00} = \min(\text{test feature timestamp})$$
+  No training target overlaps with the test feature window or test period.
+
+### 6. Evaluation Metrics and Baseline Comparison
+
+The Random Forest model is evaluated alongside a **Persistence Baseline**:
+$$\hat{V}_{\text{persistence}}(t + 5) = V(t)$$
+
+#### Metric Definitions:
+- **Mean Absolute Error (MAE):** Average magnitude of forecasting errors in concurrent viewers:
+  $$\text{MAE} = \frac{1}{N} \sum_{i=1}^N |V_{i} - \hat{V}_{i}|$$
+- **Root Mean Squared Error (RMSE):** Quadratic metric that penalizes larger prediction deviations:
+  $$\text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^N (V_{i} - \hat{V}_{i})^2}$$
+
+#### Primary Holdout Test Set Results (Purged Split):
+
+| Metric | Random Forest Model | Persistence Baseline | Improvement |
+|---|---:|---:|---:|
+| **Overall MAE** | **1,263.7 viewers** | 1,871.3 viewers | **32.5% reduction in error** |
+| **Overall RMSE** | **1,687.5 viewers** | 3,002.1 viewers | **43.8% reduction in error** |
+
+#### Scenario Breakdown (Primary Holdout):
+
+| Scenario Name | RF MAE | Baseline MAE | RF RMSE | Baseline RMSE |
+|---|---:|---:|---:|---:|
+| **Normal Traffic** | 1,106.5 | 600.3 | 1,165.3 | 617.6 |
+| **Sudden Traffic Spike** | 403.1 | 135.5 | 414.3 | 157.6 |
+| **Peak Broadcasting Event** | **2,292.7** | 5,381.1 | **2,788.1** | 5,775.0 |
+| **Event Ending** | **1,252.5** | 1,368.4 | **1,444.6** | 1,514.1 |
+
+*Analysis:* In high-gradient scenarios with strong dynamic trends (Peak Broadcasting Event and Event Ending), the Random Forest model dramatically outperforms persistence, cutting MAE by over 57% on peak broadcasting. On near-flat segments (e.g. post-spike quiet baseline in the Sudden Spike scenario), persistence exhibits minimal baseline error.
+
+#### Separate Sudden-Spike Stress Evaluation:
+
+To evaluate model performance during the actual spike, a dedicated chronological stress evaluation was conducted on the sudden-spike scenario across the active spike onset and peak window (feature minutes 45 to 70, forecasting targets 50 to 75):
+- **Training Constraints:** The model was trained with zero exposure to the spike window targets (Sudden Spike training was restricted to minutes $\le 39$, targets $\le 44$).
+- **Stress Results:**
+  - Random Forest Stress MAE: **7,798.3 viewers** | Persistence Stress MAE: **8,352.7 viewers**
+  - Random Forest Stress RMSE: **10,983.2 viewers** | Persistence Stress RMSE: **8,915.0 viewers**
+- **Dynamic Behavior:** During the rapid onset (minutes 48–54), persistence severely lags with errors between 9,000 and 12,000 viewers. Random Forest detects early growth rate signals and tracks the rise much closer (e.g., at minute 53, RF error is only +382 viewers vs. -10,965 for persistence). During the post-peak collapse, both models face significant prediction error as viewers leave rapidly.
+
+### 7. Known Limitations
+
+- **Synthetic Workload Environment:** Models are trained on mathematical simulation patterns and stochastic noise rather than real-world production CDN telemetry.
+- **Unannounced Sudden Spikes:** A sharp, unexpected spike (e.g., instantaneous goal or wicket) cannot be anticipated five minutes prior without an antecedent signal in historical data. The model can only adapt once early onset indicators register in lag and growth rate features.
+
+### 8. How to Train the Model
+
+To execute the Stage B training and evaluation pipeline:
+
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Run training pipeline
+python train_model.py
+```
+
+### 9. Model Artifact and Output Files
+
+- **Model Artifact:** [`models/random_forest_model.joblib`](file:///home/madhur/Documents/Projects/cloud-autoscaler/models/random_forest_model.joblib) contains the fitted estimator and metadata dictionary (`feature_names`, `prediction_horizon`).
+- **Evaluation Predictions:** [`data/processed/prediction_results.csv`](file:///home/madhur/Documents/Projects/cloud-autoscaler/data/processed/prediction_results.csv) records test predictions, actual viewers, and residuals.
+- **Visualizations:**
+  - `actual_vs_predicted.png`: Forecast vs actual viewers across the test set.
+  - `scenario_prediction_comparison.png`: 4-panel scenario comparison.
+  - `feature_importance.png`: Feature importance breakdown.
+
+### 10. Reusable Prediction API
+
+Future cloud simulator modules can import the standalone prediction function:
+
+```python
+import pandas as pd
+from models.predictor import predict_next_viewers
+
+# history must contain at least 6 chronological observations
+# with columns ['minute', 'viewers', 'event_active' (optional)]
+history_df = pd.DataFrame({
+    "minute": [25, 26, 27, 28, 29, 30],
+    "viewers": [12100, 12450, 12900, 13400, 14020, 14700],
+    "event_active": [False, False, False, False, False, True],
+})
+
+# Predict viewers 5 minutes ahead (at minute 35)
+predicted_viewers = predict_next_viewers(history_df)
+print(f"Predicted viewers at minute 35: {predicted_viewers}")
+```
+
+### 11. Running the Automated Test Suite
+
+Run all Stage A and Stage B unit tests:
 
 ```bash
 python -m unittest discover -s tests -v
