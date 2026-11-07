@@ -1,0 +1,481 @@
+minute,timestamp,viewers,scenario,event_active
+0,2026-01-01 00:00:00,2023,Normal Traffic,False
+1,2026-01-01 00:01:00,2018,Normal Traffic,False
+2,2026-01-01 00:02:00,2276,Normal Traffic,False
+3,2026-01-01 00:03:00,2429,Normal Traffic,False
+4,2026-01-01 00:04:00,2360,Normal Traffic,False
+5,2026-01-01 00:05:00,2565,Normal Traffic,False
+6,2026-01-01 00:06:00,2836,Normal Traffic,False
+7,2026-01-01 00:07:00,2971,Normal Traffic,False
+8,2026-01-01 00:08:00,3166,Normal Traffic,False
+9,2026-01-01 00:09:00,3280,Normal Traffic,False
+10,2026-01-01 00:10:00,3589,Normal Traffic,False
+11,2026-01-01 00:11:00,3763,Normal Traffic,False
+12,2026-01-01 00:12:00,3894,Normal Traffic,False
+13,2026-01-01 00:13:00,4158,Normal Traffic,False
+14,2026-01-01 00:14:00,4295,Normal Traffic,False
+15,2026-01-01 00:15:00,4381,Normal Traffic,False
+16,2026-01-01 00:16:00,4659,Normal Traffic,False
+17,2026-01-01 00:17:00,4746,Normal Traffic,False
+18,2026-01-01 00:18:00,5068,Normal Traffic,False
+19,2026-01-01 00:19:00,5182,Normal Traffic,False
+20,2026-01-01 00:20:00,5354,Normal Traffic,False
+21,2026-01-01 00:21:00,5497,Normal Traffic,False
+22,2026-01-01 00:22:00,5818,Normal Traffic,False
+23,2026-01-01 00:23:00,5890,Normal Traffic,False
+24,2026-01-01 00:24:00,6042,Normal Traffic,False
+25,2026-01-01 00:25:00,6217,Normal Traffic,False
+26,2026-01-01 00:26:00,6449,Normal Traffic,False
+27,2026-01-01 00:27:00,6599,Normal Traffic,False
+28,2026-01-01 00:28:00,6761,Normal Traffic,False
+29,2026-01-01 00:29:00,6916,Normal Traffic,False
+30,2026-01-01 00:30:00,7194,Normal Traffic,False
+31,2026-01-01 00:31:00,7148,Normal Traffic,False
+32,2026-01-01 00:32:00,7281,Normal Traffic,False
+33,2026-01-01 00:33:00,7393,Normal Traffic,False
+34,2026-01-01 00:34:00,7631,Normal Traffic,False
+35,2026-01-01 00:35:00,7794,Normal Traffic,False
+36,2026-01-01 00:36:00,7820,Normal Traffic,False
+37,2026-01-01 00:37:00,7879,Normal Traffic,False
+38,2026-01-01 00:38:00,7987,Normal Traffic,False
+39,2026-01-01 00:39:00,8200,Normal Traffic,False
+40,2026-01-01 00:40:00,8302,Normal Traffic,False
+41,2026-01-01 00:41:00,8377,Normal Traffic,False
+42,2026-01-01 00:42:00,8369,Normal Traffic,False
+43,2026-01-01 00:43:00,8513,Normal Traffic,False
+44,2026-01-01 00:44:00,8575,Normal Traffic,False
+45,2026-01-01 00:45:00,8646,Normal Traffic,False
+46,2026-01-01 00:46:00,8753,Normal Traffic,False
+47,2026-01-01 00:47:00,8755,Normal Traffic,False
+48,2026-01-01 00:48:00,8833,Normal Traffic,False
+49,2026-01-01 00:49:00,8825,Normal Traffic,False
+50,2026-01-01 00:50:00,8872,Normal Traffic,False
+51,2026-01-01 00:51:00,8922,Normal Traffic,False
+52,2026-01-01 00:52:00,8783,Normal Traffic,False
+53,2026-01-01 00:53:00,8879,Normal Traffic,False
+54,2026-01-01 00:54:00,8872,Normal Traffic,False
+55,2026-01-01 00:55:00,8858,Normal Traffic,False
+56,2026-01-01 00:56:00,8877,Normal Traffic,False
+57,2026-01-01 00:57:00,8994,Normal Traffic,False
+58,2026-01-01 00:58:00,8796,Normal Traffic,False
+59,2026-01-01 00:59:00,8906,Normal Traffic,False
+60,2026-01-01 01:00:00,8674,Normal Traffic,False
+61,2026-01-01 01:01:00,8735,Normal Traffic,False
+62,2026-01-01 01:02:00,8727,Normal Traffic,False
+63,2026-01-01 01:03:00,8707,Normal Traffic,False
+64,2026-01-01 01:04:00,8659,Normal Traffic,False
+65,2026-01-01 01:05:00,8603,Normal Traffic,False
+66,2026-01-01 01:06:00,8449,Normal Traffic,False
+67,2026-01-01 01:07:00,8367,Normal Traffic,False
+68,2026-01-01 01:08:00,8387,Normal Traffic,False
+69,2026-01-01 01:09:00,8225,Normal Traffic,False
+70,2026-01-01 01:10:00,8055,Normal Traffic,False
+71,2026-01-01 01:11:00,7972,Normal Traffic,False
+72,2026-01-01 01:12:00,7890,Normal Traffic,False
+73,2026-01-01 01:13:00,7894,Normal Traffic,False
+74,2026-01-01 01:14:00,7761,Normal Traffic,False
+75,2026-01-01 01:15:00,7692,Normal Traffic,False
+76,2026-01-01 01:16:00,7494,Normal Traffic,False
+77,2026-01-01 01:17:00,7420,Normal Traffic,False
+78,2026-01-01 01:18:00,7333,Normal Traffic,False
+79,2026-01-01 01:19:00,7139,Normal Traffic,False
+80,2026-01-01 01:20:00,7068,Normal Traffic,False
+81,2026-01-01 01:21:00,6854,Normal Traffic,False
+82,2026-01-01 01:22:00,6743,Normal Traffic,False
+83,2026-01-01 01:23:00,6606,Normal Traffic,False
+84,2026-01-01 01:24:00,6407,Normal Traffic,False
+85,2026-01-01 01:25:00,6393,Normal Traffic,False
+86,2026-01-01 01:26:00,6180,Normal Traffic,False
+87,2026-01-01 01:27:00,6072,Normal Traffic,False
+88,2026-01-01 01:28:00,5963,Normal Traffic,False
+89,2026-01-01 01:29:00,5814,Normal Traffic,False
+90,2026-01-01 01:30:00,5683,Normal Traffic,False
+91,2026-01-01 01:31:00,5478,Normal Traffic,False
+92,2026-01-01 01:32:00,5306,Normal Traffic,False
+93,2026-01-01 01:33:00,5183,Normal Traffic,False
+94,2026-01-01 01:34:00,4913,Normal Traffic,False
+95,2026-01-01 01:35:00,4782,Normal Traffic,False
+96,2026-01-01 01:36:00,4643,Normal Traffic,False
+97,2026-01-01 01:37:00,4519,Normal Traffic,False
+98,2026-01-01 01:38:00,4477,Normal Traffic,False
+99,2026-01-01 01:39:00,4233,Normal Traffic,False
+100,2026-01-01 01:40:00,4127,Normal Traffic,False
+101,2026-01-01 01:41:00,4109,Normal Traffic,False
+102,2026-01-01 01:42:00,3843,Normal Traffic,False
+103,2026-01-01 01:43:00,3785,Normal Traffic,False
+104,2026-01-01 01:44:00,3521,Normal Traffic,False
+105,2026-01-01 01:45:00,3440,Normal Traffic,False
+106,2026-01-01 01:46:00,3252,Normal Traffic,False
+107,2026-01-01 01:47:00,3167,Normal Traffic,False
+108,2026-01-01 01:48:00,3129,Normal Traffic,False
+109,2026-01-01 01:49:00,2813,Normal Traffic,False
+110,2026-01-01 01:50:00,2856,Normal Traffic,False
+111,2026-01-01 01:51:00,2726,Normal Traffic,False
+112,2026-01-01 01:52:00,2553,Normal Traffic,False
+113,2026-01-01 01:53:00,2384,Normal Traffic,False
+114,2026-01-01 01:54:00,2399,Normal Traffic,False
+115,2026-01-01 01:55:00,2261,Normal Traffic,False
+116,2026-01-01 01:56:00,2233,Normal Traffic,False
+117,2026-01-01 01:57:00,2141,Normal Traffic,False
+118,2026-01-01 01:58:00,2194,Normal Traffic,False
+119,2026-01-01 01:59:00,2005,Normal Traffic,False
+0,2026-01-01 00:00:00,2024,Sudden Traffic Spike,False
+1,2026-01-01 00:01:00,1948,Sudden Traffic Spike,False
+2,2026-01-01 00:02:00,2123,Sudden Traffic Spike,False
+3,2026-01-01 00:03:00,2169,Sudden Traffic Spike,False
+4,2026-01-01 00:04:00,1969,Sudden Traffic Spike,False
+5,2026-01-01 00:05:00,2052,Sudden Traffic Spike,False
+6,2026-01-01 00:06:00,2198,Sudden Traffic Spike,False
+7,2026-01-01 00:07:00,2193,Sudden Traffic Spike,False
+8,2026-01-01 00:08:00,2248,Sudden Traffic Spike,False
+9,2026-01-01 00:09:00,2212,Sudden Traffic Spike,False
+10,2026-01-01 00:10:00,2381,Sudden Traffic Spike,False
+11,2026-01-01 00:11:00,2403,Sudden Traffic Spike,False
+12,2026-01-01 00:12:00,2376,Sudden Traffic Spike,False
+13,2026-01-01 00:13:00,2491,Sudden Traffic Spike,False
+14,2026-01-01 00:14:00,2467,Sudden Traffic Spike,False
+15,2026-01-01 00:15:00,2390,Sudden Traffic Spike,False
+16,2026-01-01 00:16:00,2518,Sudden Traffic Spike,False
+17,2026-01-01 00:17:00,2440,Sudden Traffic Spike,False
+18,2026-01-01 00:18:00,2615,Sudden Traffic Spike,False
+19,2026-01-01 00:19:00,2569,Sudden Traffic Spike,False
+20,2026-01-01 00:20:00,2585,Sudden Traffic Spike,False
+21,2026-01-01 00:21:00,2573,Sudden Traffic Spike,False
+22,2026-01-01 00:22:00,2751,Sudden Traffic Spike,False
+23,2026-01-01 00:23:00,2667,Sudden Traffic Spike,False
+24,2026-01-01 00:24:00,2671,Sudden Traffic Spike,False
+25,2026-01-01 00:25:00,2702,Sudden Traffic Spike,False
+26,2026-01-01 00:26:00,2798,Sudden Traffic Spike,False
+27,2026-01-01 00:27:00,2809,Sudden Traffic Spike,False
+28,2026-01-01 00:28:00,2836,Sudden Traffic Spike,False
+29,2026-01-01 00:29:00,2861,Sudden Traffic Spike,False
+30,2026-01-01 00:30:00,3020,Sudden Traffic Spike,False
+31,2026-01-01 00:31:00,2838,Sudden Traffic Spike,False
+32,2026-01-01 00:32:00,2851,Sudden Traffic Spike,False
+33,2026-01-01 00:33:00,2848,Sudden Traffic Spike,False
+34,2026-01-01 00:34:00,2984,Sudden Traffic Spike,False
+35,2026-01-01 00:35:00,3047,Sudden Traffic Spike,False
+36,2026-01-01 00:36:00,2970,Sudden Traffic Spike,False
+37,2026-01-01 00:37:00,2938,Sudden Traffic Spike,False
+38,2026-01-01 00:38:00,2971,Sudden Traffic Spike,False
+39,2026-01-01 00:39:00,3130,Sudden Traffic Spike,False
+40,2026-01-01 00:40:00,3195,Sudden Traffic Spike,False
+41,2026-01-01 00:41:00,3264,Sudden Traffic Spike,False
+42,2026-01-01 00:42:00,3294,Sudden Traffic Spike,False
+43,2026-01-01 00:43:00,3553,Sudden Traffic Spike,False
+44,2026-01-01 00:44:00,3820,Sudden Traffic Spike,False
+45,2026-01-01 00:45:00,4225,Sudden Traffic Spike,False
+46,2026-01-01 00:46:00,4833,Sudden Traffic Spike,False
+47,2026-01-01 00:47:00,5540,Sudden Traffic Spike,False
+48,2026-01-01 00:48:00,6579,Sudden Traffic Spike,True
+49,2026-01-01 00:49:00,7813,Sudden Traffic Spike,True
+50,2026-01-01 00:50:00,9416,Sudden Traffic Spike,True
+51,2026-01-01 00:51:00,11334,Sudden Traffic Spike,True
+52,2026-01-01 00:52:00,13335,Sudden Traffic Spike,True
+53,2026-01-01 00:53:00,15813,Sudden Traffic Spike,True
+54,2026-01-01 00:54:00,18311,Sudden Traffic Spike,True
+55,2026-01-01 00:55:00,20805,Sudden Traffic Spike,True
+56,2026-01-01 00:56:00,23190,Sudden Traffic Spike,True
+57,2026-01-01 00:57:00,25378,Sudden Traffic Spike,True
+58,2026-01-01 00:58:00,26778,Sudden Traffic Spike,True
+59,2026-01-01 00:59:00,27932,Sudden Traffic Spike,True
+60,2026-01-01 01:00:00,28065,Sudden Traffic Spike,True
+61,2026-01-01 01:01:00,27828,Sudden Traffic Spike,True
+62,2026-01-01 01:02:00,26860,Sudden Traffic Spike,True
+63,2026-01-01 01:03:00,25306,Sudden Traffic Spike,True
+64,2026-01-01 01:04:00,23269,Sudden Traffic Spike,True
+65,2026-01-01 01:05:00,20919,Sudden Traffic Spike,True
+66,2026-01-01 01:06:00,18321,Sudden Traffic Spike,True
+67,2026-01-01 01:07:00,15801,Sudden Traffic Spike,True
+68,2026-01-01 01:08:00,13520,Sudden Traffic Spike,True
+69,2026-01-01 01:09:00,11268,Sudden Traffic Spike,True
+70,2026-01-01 01:10:00,9291,Sudden Traffic Spike,True
+71,2026-01-01 01:11:00,7717,Sudden Traffic Spike,True
+72,2026-01-01 01:12:00,6451,Sudden Traffic Spike,True
+73,2026-01-01 01:13:00,5562,Sudden Traffic Spike,False
+74,2026-01-01 01:14:00,4775,Sudden Traffic Spike,False
+75,2026-01-01 01:15:00,4262,Sudden Traffic Spike,False
+76,2026-01-01 01:16:00,3776,Sudden Traffic Spike,False
+77,2026-01-01 01:17:00,3547,Sudden Traffic Spike,False
+78,2026-01-01 01:18:00,3397,Sudden Traffic Spike,False
+79,2026-01-01 01:19:00,3196,Sudden Traffic Spike,False
+80,2026-01-01 01:20:00,3172,Sudden Traffic Spike,False
+81,2026-01-01 01:21:00,3025,Sudden Traffic Spike,False
+82,2026-01-01 01:22:00,3007,Sudden Traffic Spike,False
+83,2026-01-01 01:23:00,2975,Sudden Traffic Spike,False
+84,2026-01-01 01:24:00,2884,Sudden Traffic Spike,False
+85,2026-01-01 01:25:00,2995,Sudden Traffic Spike,False
+86,2026-01-01 01:26:00,2897,Sudden Traffic Spike,False
+87,2026-01-01 01:27:00,2914,Sudden Traffic Spike,False
+88,2026-01-01 01:28:00,2931,Sudden Traffic Spike,False
+89,2026-01-01 01:29:00,2906,Sudden Traffic Spike,False
+90,2026-01-01 01:30:00,2902,Sudden Traffic Spike,False
+91,2026-01-01 01:31:00,2818,Sudden Traffic Spike,False
+92,2026-01-01 01:32:00,2769,Sudden Traffic Spike,False
+93,2026-01-01 01:33:00,2773,Sudden Traffic Spike,False
+94,2026-01-01 01:34:00,2620,Sudden Traffic Spike,False
+95,2026-01-01 01:35:00,2615,Sudden Traffic Spike,False
+96,2026-01-01 01:36:00,2600,Sudden Traffic Spike,False
+97,2026-01-01 01:37:00,2600,Sudden Traffic Spike,False
+98,2026-01-01 01:38:00,2686,Sudden Traffic Spike,False
+99,2026-01-01 01:39:00,2555,Sudden Traffic Spike,False
+100,2026-01-01 01:40:00,2570,Sudden Traffic Spike,False
+101,2026-01-01 01:41:00,2677,Sudden Traffic Spike,False
+102,2026-01-01 01:42:00,2516,Sudden Traffic Spike,False
+103,2026-01-01 01:43:00,2576,Sudden Traffic Spike,False
+104,2026-01-01 01:44:00,2413,Sudden Traffic Spike,False
+105,2026-01-01 01:45:00,2443,Sudden Traffic Spike,False
+106,2026-01-01 01:46:00,2354,Sudden Traffic Spike,False
+107,2026-01-01 01:47:00,2373,Sudden Traffic Spike,False
+108,2026-01-01 01:48:00,2438,Sudden Traffic Spike,False
+109,2026-01-01 01:49:00,2203,Sudden Traffic Spike,False
+110,2026-01-01 01:50:00,2345,Sudden Traffic Spike,False
+111,2026-01-01 01:51:00,2299,Sudden Traffic Spike,False
+112,2026-01-01 01:52:00,2202,Sudden Traffic Spike,False
+113,2026-01-01 01:53:00,2103,Sudden Traffic Spike,False
+114,2026-01-01 01:54:00,2193,Sudden Traffic Spike,False
+115,2026-01-01 01:55:00,2114,Sudden Traffic Spike,False
+116,2026-01-01 01:56:00,2144,Sudden Traffic Spike,False
+117,2026-01-01 01:57:00,2096,Sudden Traffic Spike,False
+118,2026-01-01 01:58:00,2191,Sudden Traffic Spike,False
+119,2026-01-01 01:59:00,2012,Sudden Traffic Spike,False
+0,2026-01-01 00:00:00,2067,Peak Broadcasting Event,False
+1,2026-01-01 00:01:00,1828,Peak Broadcasting Event,False
+2,2026-01-01 00:02:00,2392,Peak Broadcasting Event,False
+3,2026-01-01 00:03:00,2716,Peak Broadcasting Event,False
+4,2026-01-01 00:04:00,2474,Peak Broadcasting Event,False
+5,2026-01-01 00:05:00,3120,Peak Broadcasting Event,False
+6,2026-01-01 00:06:00,4045,Peak Broadcasting Event,False
+7,2026-01-01 00:07:00,4663,Peak Broadcasting Event,False
+8,2026-01-01 00:08:00,5547,Peak Broadcasting Event,False
+9,2026-01-01 00:09:00,6278,Peak Broadcasting Event,False
+10,2026-01-01 00:10:00,7670,Peak Broadcasting Event,False
+11,2026-01-01 00:11:00,8747,Peak Broadcasting Event,False
+12,2026-01-01 00:12:00,9776,Peak Broadcasting Event,False
+13,2026-01-01 00:13:00,11275,Peak Broadcasting Event,False
+14,2026-01-01 00:14:00,12471,Peak Broadcasting Event,False
+15,2026-01-01 00:15:00,13588,Peak Broadcasting Event,False
+16,2026-01-01 00:16:00,15331,Peak Broadcasting Event,False
+17,2026-01-01 00:17:00,16568,Peak Broadcasting Event,False
+18,2026-01-01 00:18:00,18552,Peak Broadcasting Event,False
+19,2026-01-01 00:19:00,19971,Peak Broadcasting Event,False
+20,2026-01-01 00:20:00,21601,Peak Broadcasting Event,False
+21,2026-01-01 00:21:00,23180,Peak Broadcasting Event,False
+22,2026-01-01 00:22:00,25310,Peak Broadcasting Event,False
+23,2026-01-01 00:23:00,26733,Peak Broadcasting Event,False
+24,2026-01-01 00:24:00,28406,Peak Broadcasting Event,False
+25,2026-01-01 00:25:00,30156,Peak Broadcasting Event,False
+26,2026-01-01 00:26:00,32076,Peak Broadcasting Event,False
+27,2026-01-01 00:27:00,33750,Peak Broadcasting Event,False
+28,2026-01-01 00:28:00,35450,Peak Broadcasting Event,False
+29,2026-01-01 00:29:00,37113,Peak Broadcasting Event,False
+30,2026-01-01 00:30:00,39112,Peak Broadcasting Event,False
+31,2026-01-01 00:31:00,40131,Peak Broadcasting Event,False
+32,2026-01-01 00:32:00,41637,Peak Broadcasting Event,False
+33,2026-01-01 00:33:00,43044,Peak Broadcasting Event,False
+34,2026-01-01 00:34:00,44768,Peak Broadcasting Event,False
+35,2026-01-01 00:35:00,46221,Peak Broadcasting Event,False
+36,2026-01-01 00:36:00,47213,Peak Broadcasting Event,False
+37,2026-01-01 00:37:00,48239,Peak Broadcasting Event,False
+38,2026-01-01 00:38:00,49342,Peak Broadcasting Event,False
+39,2026-01-01 00:39:00,50677,Peak Broadcasting Event,False
+40,2026-01-01 00:40:00,51613,Peak Broadcasting Event,False
+41,2026-01-01 00:41:00,52387,Peak Broadcasting Event,False
+42,2026-01-01 00:42:00,52836,Peak Broadcasting Event,False
+43,2026-01-01 00:43:00,53645,Peak Broadcasting Event,False
+44,2026-01-01 00:44:00,54123,Peak Broadcasting Event,False
+45,2026-01-01 00:45:00,54539,Peak Broadcasting Event,False
+46,2026-01-01 00:46:00,54965,Peak Broadcasting Event,False
+47,2026-01-01 00:47:00,54992,Peak Broadcasting Event,False
+48,2026-01-01 00:48:00,55149,Peak Broadcasting Event,True
+49,2026-01-01 00:49:00,55015,Peak Broadcasting Event,True
+50,2026-01-01 00:50:00,55064,Peak Broadcasting Event,True
+51,2026-01-01 00:51:00,55139,Peak Broadcasting Event,True
+52,2026-01-01 00:52:00,54679,Peak Broadcasting Event,True
+53,2026-01-01 00:53:00,54930,Peak Broadcasting Event,True
+54,2026-01-01 00:54:00,54897,Peak Broadcasting Event,True
+55,2026-01-01 00:55:00,54859,Peak Broadcasting Event,True
+56,2026-01-01 00:56:00,54939,Peak Broadcasting Event,True
+57,2026-01-01 00:57:00,55329,Peak Broadcasting Event,True
+58,2026-01-01 00:58:00,54810,Peak Broadcasting Event,True
+59,2026-01-01 00:59:00,55213,Peak Broadcasting Event,True
+60,2026-01-01 01:00:00,54630,Peak Broadcasting Event,True
+61,2026-01-01 01:01:00,54926,Peak Broadcasting Event,True
+62,2026-01-01 01:02:00,55036,Peak Broadcasting Event,True
+63,2026-01-01 01:03:00,55129,Peak Broadcasting Event,True
+64,2026-01-01 01:04:00,55156,Peak Broadcasting Event,True
+65,2026-01-01 01:05:00,55175,Peak Broadcasting Event,True
+66,2026-01-01 01:06:00,54923,Peak Broadcasting Event,True
+67,2026-01-01 01:07:00,54898,Peak Broadcasting Event,True
+68,2026-01-01 01:08:00,55189,Peak Broadcasting Event,True
+69,2026-01-01 01:09:00,54958,Peak Broadcasting Event,True
+70,2026-01-01 01:10:00,54719,Peak Broadcasting Event,True
+71,2026-01-01 01:11:00,54751,Peak Broadcasting Event,True
+72,2026-01-01 01:12:00,54798,Peak Broadcasting Event,True
+73,2026-01-01 01:13:00,55057,Peak Broadcasting Event,False
+74,2026-01-01 01:14:00,54822,Peak Broadcasting Event,False
+75,2026-01-01 01:15:00,54681,Peak Broadcasting Event,False
+76,2026-01-01 01:16:00,54071,Peak Broadcasting Event,False
+77,2026-01-01 01:17:00,53735,Peak Broadcasting Event,False
+78,2026-01-01 01:18:00,53273,Peak Broadcasting Event,False
+79,2026-01-01 01:19:00,52406,Peak Broadcasting Event,False
+80,2026-01-01 01:20:00,51820,Peak Broadcasting Event,False
+81,2026-01-01 01:21:00,50729,Peak Broadcasting Event,False
+82,2026-01-01 01:22:00,49863,Peak Broadcasting Event,False
+83,2026-01-01 01:23:00,48845,Peak Broadcasting Event,False
+84,2026-01-01 01:24:00,47574,Peak Broadcasting Event,False
+85,2026-01-01 01:25:00,46779,Peak Broadcasting Event,False
+86,2026-01-01 01:26:00,45336,Peak Broadcasting Event,False
+87,2026-01-01 01:27:00,44148,Peak Broadcasting Event,False
+88,2026-01-01 01:28:00,42899,Peak Broadcasting Event,False
+89,2026-01-01 01:29:00,41490,Peak Broadcasting Event,False
+90,2026-01-01 01:30:00,40092,Peak Broadcasting Event,False
+91,2026-01-01 01:31:00,38441,Peak Broadcasting Event,False
+92,2026-01-01 01:32:00,36855,Peak Broadcasting Event,False
+93,2026-01-01 01:33:00,35391,Peak Broadcasting Event,False
+94,2026-01-01 01:34:00,33481,Peak Broadcasting Event,False
+95,2026-01-01 01:35:00,31967,Peak Broadcasting Event,False
+96,2026-01-01 01:36:00,30424,Peak Broadcasting Event,False
+97,2026-01-01 01:37:00,28928,Peak Broadcasting Event,False
+98,2026-01-01 01:38:00,27679,Peak Broadcasting Event,False
+99,2026-01-01 01:39:00,25853,Peak Broadcasting Event,False
+100,2026-01-01 01:40:00,24454,Peak Broadcasting Event,False
+101,2026-01-01 01:41:00,23340,Peak Broadcasting Event,False
+102,2026-01-01 01:42:00,21530,Peak Broadcasting Event,False
+103,2026-01-01 01:43:00,20369,Peak Broadcasting Event,False
+104,2026-01-01 01:44:00,18650,Peak Broadcasting Event,False
+105,2026-01-01 01:45:00,17515,Peak Broadcasting Event,False
+106,2026-01-01 01:46:00,16119,Peak Broadcasting Event,False
+107,2026-01-01 01:47:00,15088,Peak Broadcasting Event,False
+108,2026-01-01 01:48:00,14256,Peak Broadcasting Event,False
+109,2026-01-01 01:49:00,12677,Peak Broadcasting Event,False
+110,2026-01-01 01:50:00,12221,Peak Broadcasting Event,False
+111,2026-01-01 01:51:00,11333,Peak Broadcasting Event,False
+112,2026-01-01 01:52:00,10395,Peak Broadcasting Event,False
+113,2026-01-01 01:53:00,9547,Peak Broadcasting Event,False
+114,2026-01-01 01:54:00,9316,Peak Broadcasting Event,False
+115,2026-01-01 01:55:00,8718,Peak Broadcasting Event,False
+116,2026-01-01 01:56:00,8522,Peak Broadcasting Event,False
+117,2026-01-01 01:57:00,8214,Peak Broadcasting Event,False
+118,2026-01-01 01:58:00,8405,Peak Broadcasting Event,False
+119,2026-01-01 01:59:00,7947,Peak Broadcasting Event,False
+0,2026-01-01 00:00:00,50055,Event Ending,True
+1,2026-01-01 00:01:00,49813,Event Ending,True
+2,2026-01-01 00:02:00,50135,Event Ending,True
+3,2026-01-01 00:03:00,50169,Event Ending,True
+4,2026-01-01 00:04:00,49649,Event Ending,True
+5,2026-01-01 00:05:00,49766,Event Ending,True
+6,2026-01-01 00:06:00,50023,Event Ending,True
+7,2026-01-01 00:07:00,49943,Event Ending,True
+8,2026-01-01 00:08:00,49997,Event Ending,True
+9,2026-01-01 00:09:00,49846,Event Ending,True
+10,2026-01-01 00:10:00,50158,Event Ending,True
+11,2026-01-01 00:11:00,50140,Event Ending,True
+12,2026-01-01 00:12:00,50012,Event Ending,True
+13,2026-01-01 00:13:00,50203,Event Ending,True
+14,2026-01-01 00:14:00,50084,Event Ending,True
+15,2026-01-01 00:15:00,49845,Event Ending,True
+16,2026-01-01 00:16:00,50066,Event Ending,True
+17,2026-01-01 00:17:00,49827,Event Ending,True
+18,2026-01-01 00:18:00,50158,Event Ending,True
+19,2026-01-01 00:19:00,49980,Event Ending,False
+20,2026-01-01 00:20:00,49921,Event Ending,False
+21,2026-01-01 00:21:00,49775,Event Ending,False
+22,2026-01-01 00:22:00,50038,Event Ending,False
+23,2026-01-01 00:23:00,49689,Event Ending,False
+24,2026-01-01 00:24:00,49515,Event Ending,False
+25,2026-01-01 00:25:00,49382,Event Ending,False
+26,2026-01-01 00:26:00,49372,Event Ending,False
+27,2026-01-01 00:27:00,49151,Event Ending,False
+28,2026-01-01 00:28:00,48947,Event Ending,False
+29,2026-01-01 00:29:00,48715,Event Ending,False
+30,2026-01-01 00:30:00,48767,Event Ending,False
+31,2026-01-01 00:31:00,48032,Event Ending,False
+32,2026-01-01 00:32:00,47715,Event Ending,False
+33,2026-01-01 00:33:00,47342,Event Ending,False
+34,2026-01-01 00:34:00,47260,Event Ending,False
+35,2026-01-01 00:35:00,46994,Event Ending,False
+36,2026-01-01 00:36:00,46391,Event Ending,False
+37,2026-01-01 00:37:00,45863,Event Ending,False
+38,2026-01-01 00:38:00,45449,Event Ending,False
+39,2026-01-01 00:39:00,45279,Event Ending,False
+40,2026-01-01 00:40:00,44843,Event Ending,False
+41,2026-01-01 00:41:00,44336,Event Ending,False
+42,2026-01-01 00:42:00,43631,Event Ending,False
+43,2026-01-01 00:43:00,43288,Event Ending,False
+44,2026-01-01 00:44:00,42746,Event Ending,False
+45,2026-01-01 00:45:00,42228,Event Ending,False
+46,2026-01-01 00:46:00,41793,Event Ending,False
+47,2026-01-01 00:47:00,41110,Event Ending,False
+48,2026-01-01 00:48:00,40612,Event Ending,False
+49,2026-01-01 00:49:00,39908,Event Ending,False
+50,2026-01-01 00:50:00,39341,Event Ending,False
+51,2026-01-01 00:51:00,38783,Event Ending,False
+52,2026-01-01 00:52:00,37776,Event Ending,False
+53,2026-01-01 00:53:00,37339,Event Ending,False
+54,2026-01-01 00:54:00,36659,Event Ending,False
+55,2026-01-01 00:55:00,35966,Event Ending,False
+56,2026-01-01 00:56:00,35359,Event Ending,False
+57,2026-01-01 00:57:00,34997,Event Ending,False
+58,2026-01-01 00:58:00,33884,Event Ending,False
+59,2026-01-01 00:59:00,33518,Event Ending,False
+60,2026-01-01 01:00:00,32338,Event Ending,False
+61,2026-01-01 01:01:00,31872,Event Ending,False
+62,2026-01-01 01:02:00,31248,Event Ending,False
+63,2026-01-01 01:03:00,30606,Event Ending,False
+64,2026-01-01 01:04:00,29907,Event Ending,False
+65,2026-01-01 01:05:00,29196,Event Ending,False
+66,2026-01-01 01:06:00,28263,Event Ending,False
+67,2026-01-01 01:07:00,27513,Event Ending,False
+68,2026-01-01 01:08:00,27020,Event Ending,False
+69,2026-01-01 01:09:00,26100,Event Ending,False
+70,2026-01-01 01:10:00,25174,Event Ending,False
+71,2026-01-01 01:11:00,24470,Event Ending,False
+72,2026-01-01 01:12:00,23781,Event Ending,False
+73,2026-01-01 01:13:00,23311,Event Ending,False
+74,2026-01-01 01:14:00,22525,Event Ending,False
+75,2026-01-01 01:15:00,21905,Event Ending,False
+76,2026-01-01 01:16:00,20990,Event Ending,False
+77,2026-01-01 01:17:00,20387,Event Ending,False
+78,2026-01-01 01:18:00,19769,Event Ending,False
+79,2026-01-01 01:19:00,18905,Event Ending,False
+80,2026-01-01 01:20:00,18354,Event Ending,False
+81,2026-01-01 01:21:00,17472,Event Ending,False
+82,2026-01-01 01:22:00,16854,Event Ending,False
+83,2026-01-01 01:23:00,16188,Event Ending,False
+84,2026-01-01 01:24:00,15389,Event Ending,False
+85,2026-01-01 01:25:00,15049,Event Ending,False
+86,2026-01-01 01:26:00,14246,Event Ending,False
+87,2026-01-01 01:27:00,13713,Event Ending,False
+88,2026-01-01 01:28:00,13191,Event Ending,False
+89,2026-01-01 01:29:00,12591,Event Ending,False
+90,2026-01-01 01:30:00,12050,Event Ending,False
+91,2026-01-01 01:31:00,11346,Event Ending,False
+92,2026-01-01 01:32:00,10735,Event Ending,False
+93,2026-01-01 01:33:00,10261,Event Ending,False
+94,2026-01-01 01:34:00,9451,Event Ending,False
+95,2026-01-01 01:35:00,8989,Event Ending,False
+96,2026-01-01 01:36:00,8524,Event Ending,False
+97,2026-01-01 01:37:00,8111,Event Ending,False
+98,2026-01-01 01:38:00,7910,Event Ending,False
+99,2026-01-01 01:39:00,7240,Event Ending,False
+100,2026-01-01 01:40:00,6918,Event Ending,False
+101,2026-01-01 01:41:00,6822,Event Ending,False
+102,2026-01-01 01:42:00,6145,Event Ending,False
+103,2026-01-01 01:43:00,5983,Event Ending,False
+104,2026-01-01 01:44:00,5344,Event Ending,False
+105,2026-01-01 01:45:00,5156,Event Ending,False
+106,2026-01-01 01:46:00,4724,Event Ending,False
+107,2026-01-01 01:47:00,4557,Event Ending,False
+108,2026-01-01 01:48:00,4513,Event Ending,False
+109,2026-01-01 01:49:00,3817,Event Ending,False
+110,2026-01-01 01:50:00,3993,Event Ending,False
+111,2026-01-01 01:51:00,3767,Event Ending,False
+112,2026-01-01 01:52:00,3448,Event Ending,False
+113,2026-01-01 01:53:00,3148,Event Ending,False
+114,2026-01-01 01:54:00,3297,Event Ending,False
+115,2026-01-01 01:55:00,3086,Event Ending,False
+116,2026-01-01 01:56:00,3144,Event Ending,False
+117,2026-01-01 01:57:00,3049,Event Ending,False
+118,2026-01-01 01:58:00,3300,Event Ending,False
+119,2026-01-01 01:59:00,2957,Event Ending,False
