@@ -5,6 +5,7 @@ for dynamic cloud resource allocation during live event broadcasts.
 """
 
 from autoscaling.base_scaler import BaseScaler, ScalerConfig, ScalingDecision
+from autoscaling.predictive_scaler import PredictiveScaler
 from autoscaling.reactive_scaler import ReactiveScaler
 
 __all__ = [
@@ -12,4 +13,5 @@ __all__ = [
     "ScalerConfig",
     "ScalingDecision",
     "ReactiveScaler",
+    "PredictiveScaler",
 ]

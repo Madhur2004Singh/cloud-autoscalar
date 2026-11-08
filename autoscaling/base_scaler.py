@@ -99,6 +99,7 @@ class ScalingDecision:
     desired_servers: int
     actual_servers: int
     reason: str
+    predicted_viewers: Optional[int] = None
 
     def __post_init__(self) -> None:
         """Validate scaling decision fields."""
@@ -125,8 +126,11 @@ class ScalingDecision:
 
     @property
     def scaled(self) -> bool:
-        """Return True if an actual scaling operation was performed."""
-        return self.action in {"scale_up", "scale_down"}
+        """Return True if an actual scaling operation was performed on infrastructure."""
+        return (
+            self.action in {"scale_up", "scale_down"}
+            and self.actual_servers != self.previous_servers
+        )
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert decision record to dictionary."""
