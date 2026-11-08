@@ -1,0 +1,961 @@
+scenario,strategy,minute,action,reason,previous_server_count,desired_server_count,actual_server_count,predicted_viewers
+Normal Traffic,Reactive,0,scale_up,CPU utilization (101.2%) exceeded target (70.0%). Scaled up from 2 to 3 servers.,2,3,3,
+Normal Traffic,Reactive,1,no_action,"CPU utilization (67.3%) is within normal operating range [30.0%, 70.0%].",3,3,3,
+Normal Traffic,Reactive,2,scale_up,CPU utilization (75.9%) exceeded target (70.0%). Scaled up from 3 to 4 servers.,3,4,4,
+Normal Traffic,Reactive,3,no_action,"CPU utilization (60.7%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Normal Traffic,Reactive,4,no_action,"CPU utilization (59.0%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Normal Traffic,Reactive,5,no_action,"CPU utilization (64.1%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Normal Traffic,Reactive,6,scale_up,CPU utilization (70.9%) exceeded target (70.0%). Scaled up from 4 to 5 servers.,4,5,5,
+Normal Traffic,Reactive,7,no_action,"CPU utilization (59.4%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Normal Traffic,Reactive,8,no_action,"CPU utilization (63.3%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Normal Traffic,Reactive,9,no_action,"CPU utilization (65.6%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Normal Traffic,Reactive,10,scale_up,CPU utilization (71.8%) exceeded target (70.0%). Scaled up from 5 to 6 servers.,5,6,6,
+Normal Traffic,Reactive,11,no_action,"CPU utilization (62.7%) is within normal operating range [30.0%, 70.0%].",6,6,6,
+Normal Traffic,Reactive,12,no_action,"CPU utilization (64.9%) is within normal operating range [30.0%, 70.0%].",6,6,6,
+Normal Traffic,Reactive,13,no_action,"CPU utilization (69.3%) is within normal operating range [30.0%, 70.0%].",6,6,6,
+Normal Traffic,Reactive,14,scale_up,CPU utilization (71.6%) exceeded target (70.0%). Scaled up from 6 to 7 servers.,6,7,7,
+Normal Traffic,Reactive,15,no_action,"CPU utilization (62.6%) is within normal operating range [30.0%, 70.0%].",7,7,7,
+Normal Traffic,Reactive,16,no_action,"CPU utilization (66.6%) is within normal operating range [30.0%, 70.0%].",7,7,7,
+Normal Traffic,Reactive,17,no_action,"CPU utilization (67.8%) is within normal operating range [30.0%, 70.0%].",7,7,7,
+Normal Traffic,Reactive,18,scale_up,CPU utilization (72.4%) exceeded target (70.0%). Scaled up from 7 to 8 servers.,7,8,8,
+Normal Traffic,Reactive,19,no_action,"CPU utilization (64.8%) is within normal operating range [30.0%, 70.0%].",8,8,8,
+Normal Traffic,Reactive,20,no_action,"CPU utilization (66.9%) is within normal operating range [30.0%, 70.0%].",8,8,8,
+Normal Traffic,Reactive,21,no_action,"CPU utilization (68.7%) is within normal operating range [30.0%, 70.0%].",8,8,8,
+Normal Traffic,Reactive,22,scale_up,CPU utilization (72.7%) exceeded target (70.0%). Scaled up from 8 to 9 servers.,8,9,9,
+Normal Traffic,Reactive,23,no_action,"CPU utilization (65.4%) is within normal operating range [30.0%, 70.0%].",9,9,9,
+Normal Traffic,Reactive,24,no_action,"CPU utilization (67.1%) is within normal operating range [30.0%, 70.0%].",9,9,9,
+Normal Traffic,Reactive,25,no_action,"CPU utilization (69.1%) is within normal operating range [30.0%, 70.0%].",9,9,9,
+Normal Traffic,Reactive,26,scale_up,CPU utilization (71.7%) exceeded target (70.0%). Scaled up from 9 to 10 servers.,9,10,10,
+Normal Traffic,Reactive,27,no_action,"CPU utilization (66.0%) is within normal operating range [30.0%, 70.0%].",10,10,10,
+Normal Traffic,Reactive,28,no_action,"CPU utilization (67.6%) is within normal operating range [30.0%, 70.0%].",10,10,10,
+Normal Traffic,Reactive,29,no_action,"CPU utilization (69.2%) is within normal operating range [30.0%, 70.0%].",10,10,10,
+Normal Traffic,Reactive,30,scale_up,CPU utilization (71.9%) exceeded target (70.0%). Scaled up from 10 to 11 servers.,10,11,11,
+Normal Traffic,Reactive,31,no_action,"CPU utilization (65.0%) is within normal operating range [30.0%, 70.0%].",11,11,11,
+Normal Traffic,Reactive,32,no_action,"CPU utilization (66.2%) is within normal operating range [30.0%, 70.0%].",11,11,11,
+Normal Traffic,Reactive,33,no_action,"CPU utilization (67.2%) is within normal operating range [30.0%, 70.0%].",11,11,11,
+Normal Traffic,Reactive,34,no_action,"CPU utilization (69.4%) is within normal operating range [30.0%, 70.0%].",11,11,11,
+Normal Traffic,Reactive,35,scale_up,CPU utilization (70.9%) exceeded target (70.0%). Scaled up from 11 to 12 servers.,11,12,12,
+Normal Traffic,Reactive,36,no_action,"CPU utilization (65.2%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,37,no_action,"CPU utilization (65.7%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,38,no_action,"CPU utilization (66.6%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,39,no_action,"CPU utilization (68.3%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,40,no_action,"CPU utilization (69.2%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,41,no_action,"CPU utilization (69.8%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,42,no_action,"CPU utilization (69.7%) is within normal operating range [30.0%, 70.0%].",12,12,12,
+Normal Traffic,Reactive,43,scale_up,CPU utilization (70.9%) exceeded target (70.0%). Scaled up from 12 to 13 servers.,12,13,13,
+Normal Traffic,Reactive,44,no_action,"CPU utilization (66.0%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,45,no_action,"CPU utilization (66.5%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,46,no_action,"CPU utilization (67.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,47,no_action,"CPU utilization (67.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,48,no_action,"CPU utilization (67.9%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,49,no_action,"CPU utilization (67.9%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,50,no_action,"CPU utilization (68.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,51,no_action,"CPU utilization (68.6%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,52,no_action,"CPU utilization (67.6%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,53,no_action,"CPU utilization (68.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,54,no_action,"CPU utilization (68.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,55,no_action,"CPU utilization (68.1%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,56,no_action,"CPU utilization (68.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,57,no_action,"CPU utilization (69.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,58,no_action,"CPU utilization (67.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,59,no_action,"CPU utilization (68.5%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,60,no_action,"CPU utilization (66.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,61,no_action,"CPU utilization (67.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,62,no_action,"CPU utilization (67.1%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,63,no_action,"CPU utilization (67.0%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,64,no_action,"CPU utilization (66.6%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,65,no_action,"CPU utilization (66.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,66,no_action,"CPU utilization (65.0%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,67,no_action,"CPU utilization (64.4%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,68,no_action,"CPU utilization (64.5%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,69,no_action,"CPU utilization (63.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,70,no_action,"CPU utilization (62.0%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,71,no_action,"CPU utilization (61.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,72,no_action,"CPU utilization (60.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,73,no_action,"CPU utilization (60.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,74,no_action,"CPU utilization (59.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,75,no_action,"CPU utilization (59.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,76,no_action,"CPU utilization (57.6%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,77,no_action,"CPU utilization (57.1%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,78,no_action,"CPU utilization (56.4%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,79,no_action,"CPU utilization (54.9%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,80,no_action,"CPU utilization (54.4%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,81,no_action,"CPU utilization (52.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,82,no_action,"CPU utilization (51.9%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,83,no_action,"CPU utilization (50.8%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,84,no_action,"CPU utilization (49.3%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,85,no_action,"CPU utilization (49.2%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,86,no_action,"CPU utilization (47.5%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,87,no_action,"CPU utilization (46.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,88,no_action,"CPU utilization (45.9%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,89,no_action,"CPU utilization (44.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,90,no_action,"CPU utilization (43.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,91,no_action,"CPU utilization (42.1%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,92,no_action,"CPU utilization (40.8%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,93,no_action,"CPU utilization (39.9%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,94,no_action,"CPU utilization (37.8%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,95,no_action,"CPU utilization (36.8%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,96,no_action,"CPU utilization (35.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,97,no_action,"CPU utilization (34.8%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,98,no_action,"CPU utilization (34.4%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,99,no_action,"CPU utilization (32.6%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,100,no_action,"CPU utilization (31.7%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,101,no_action,"CPU utilization (31.6%) is within normal operating range [30.0%, 70.0%].",13,13,13,
+Normal Traffic,Reactive,102,no_action,CPU utilization (29.6%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,13,13,13,
+Normal Traffic,Reactive,103,no_action,CPU utilization (29.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,13,13,13,
+Normal Traffic,Reactive,104,scale_down,CPU utilization (27.1%) below 30.0% for 3 consecutive intervals. Scaled down from 13 to 12 servers (removed server-13).,13,12,12,
+Normal Traffic,Reactive,105,no_action,CPU utilization (28.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,12,12,12,
+Normal Traffic,Reactive,106,no_action,CPU utilization (27.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,12,12,12,
+Normal Traffic,Reactive,107,scale_down,CPU utilization (26.4%) below 30.0% for 3 consecutive intervals. Scaled down from 12 to 11 servers (removed server-12).,12,11,11,
+Normal Traffic,Reactive,108,no_action,CPU utilization (28.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,11,11,11,
+Normal Traffic,Reactive,109,no_action,CPU utilization (25.6%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,11,11,11,
+Normal Traffic,Reactive,110,scale_down,CPU utilization (26.0%) below 30.0% for 3 consecutive intervals. Scaled down from 11 to 10 servers (removed server-11).,11,10,10,
+Normal Traffic,Reactive,111,no_action,CPU utilization (27.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,10,10,10,
+Normal Traffic,Reactive,112,no_action,CPU utilization (25.5%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,10,10,10,
+Normal Traffic,Reactive,113,scale_down,CPU utilization (23.8%) below 30.0% for 3 consecutive intervals. Scaled down from 10 to 9 servers (removed server-10).,10,9,9,
+Normal Traffic,Reactive,114,no_action,CPU utilization (26.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,9,9,9,
+Normal Traffic,Reactive,115,no_action,CPU utilization (25.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,9,9,9,
+Normal Traffic,Reactive,116,scale_down,CPU utilization (24.8%) below 30.0% for 3 consecutive intervals. Scaled down from 9 to 8 servers (removed server-9).,9,8,8,
+Normal Traffic,Reactive,117,no_action,CPU utilization (26.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,8,8,8,
+Normal Traffic,Reactive,118,no_action,CPU utilization (27.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,8,8,8,
+Normal Traffic,Reactive,119,scale_down,CPU utilization (25.1%) below 30.0% for 3 consecutive intervals. Scaled down from 8 to 7 servers (removed server-8).,8,7,7,
+Normal Traffic,Predictive,0,no_action,Insufficient historical observations (1/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Normal Traffic,Predictive,1,no_action,Insufficient historical observations (2/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Normal Traffic,Predictive,2,no_action,Insufficient historical observations (3/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Normal Traffic,Predictive,3,no_action,Insufficient historical observations (4/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Normal Traffic,Predictive,4,no_action,Insufficient historical observations (5/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Normal Traffic,Predictive,5,scale_up,Predicted demand (3350 viewers at t+5) exceeded capacity. Scaled up proactively from 2 to 5 servers.,2,5,5,3350.0
+Normal Traffic,Predictive,6,no_action,"Predicted demand (4305 viewers at t+5) requires 7 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 5, cooldown=2 intervals).",5,7,5,4305.0
+Normal Traffic,Predictive,7,scale_up,Predicted demand (3655 viewers at t+5) exceeded capacity. Scaled up proactively from 5 to 6 servers.,5,6,6,3655.0
+Normal Traffic,Predictive,8,no_action,"Predicted demand (4246 viewers at t+5) requires 7 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 7, cooldown=2 intervals).",6,7,6,4246.0
+Normal Traffic,Predictive,9,scale_up,Predicted demand (4494 viewers at t+5) exceeded capacity. Scaled up proactively from 6 to 7 servers.,6,7,7,4494.0
+Normal Traffic,Predictive,10,no_action,"Predicted demand (5415 viewers at t+5) requires 8 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 9, cooldown=2 intervals).",7,8,7,5415.0
+Normal Traffic,Predictive,11,no_action,"Predicted demand (4799 viewers at t+5, projected CPU 68.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 7 servers.",7,7,7,4799.0
+Normal Traffic,Predictive,12,scale_up,Predicted demand (5062 viewers at t+5) exceeded capacity. Scaled up proactively from 7 to 8 servers.,7,8,8,5062.0
+Normal Traffic,Predictive,13,no_action,"Predicted demand (5487 viewers at t+5, projected CPU 68.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 8 servers.",8,8,8,5487.0
+Normal Traffic,Predictive,14,no_action,"Predicted demand (5335 viewers at t+5, projected CPU 66.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 8 servers.",8,8,8,5335.0
+Normal Traffic,Predictive,15,no_action,"Predicted demand (5409 viewers at t+5, projected CPU 67.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 8 servers.",8,8,8,5409.0
+Normal Traffic,Predictive,16,scale_up,Predicted demand (5831 viewers at t+5) exceeded capacity. Scaled up proactively from 8 to 9 servers.,8,9,9,5831.0
+Normal Traffic,Predictive,17,no_action,"Predicted demand (5780 viewers at t+5, projected CPU 64.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 9 servers.",9,9,9,5780.0
+Normal Traffic,Predictive,18,scale_up,Predicted demand (6359 viewers at t+5) exceeded capacity. Scaled up proactively from 9 to 10 servers.,9,10,10,6359.0
+Normal Traffic,Predictive,19,no_action,"Predicted demand (6037 viewers at t+5, projected CPU 60.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,6037.0
+Normal Traffic,Predictive,20,no_action,"Predicted demand (6353 viewers at t+5, projected CPU 63.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,6353.0
+Normal Traffic,Predictive,21,no_action,"Predicted demand (6389 viewers at t+5, projected CPU 63.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,6389.0
+Normal Traffic,Predictive,22,no_action,"Predicted demand (6714 viewers at t+5, projected CPU 67.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,6714.0
+Normal Traffic,Predictive,23,no_action,"Predicted demand (6527 viewers at t+5, projected CPU 65.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,6527.0
+Normal Traffic,Predictive,24,no_action,"Predicted demand (6859 viewers at t+5, projected CPU 68.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,6859.0
+Normal Traffic,Predictive,25,scale_up,Predicted demand (7016 viewers at t+5) exceeded capacity. Scaled up proactively from 10 to 11 servers.,10,11,11,7016.0
+Normal Traffic,Predictive,26,no_action,"Predicted demand (7152 viewers at t+5, projected CPU 65.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 11 servers.",11,11,11,7152.0
+Normal Traffic,Predictive,27,no_action,"Predicted demand (7245 viewers at t+5, projected CPU 65.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 11 servers.",11,11,11,7245.0
+Normal Traffic,Predictive,28,no_action,"Predicted demand (7354 viewers at t+5, projected CPU 66.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 11 servers.",11,11,11,7354.0
+Normal Traffic,Predictive,29,no_action,"Predicted demand (7563 viewers at t+5, projected CPU 68.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 11 servers.",11,11,11,7563.0
+Normal Traffic,Predictive,30,scale_up,Predicted demand (7801 viewers at t+5) exceeded capacity. Scaled up proactively from 11 to 12 servers.,11,12,12,7801.0
+Normal Traffic,Predictive,31,no_action,"Predicted demand (7594 viewers at t+5, projected CPU 63.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,7594.0
+Normal Traffic,Predictive,32,no_action,"Predicted demand (7762 viewers at t+5, projected CPU 64.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,7762.0
+Normal Traffic,Predictive,33,no_action,"Predicted demand (7812 viewers at t+5, projected CPU 65.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,7812.0
+Normal Traffic,Predictive,34,no_action,"Predicted demand (8020 viewers at t+5, projected CPU 66.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,8020.0
+Normal Traffic,Predictive,35,no_action,"Predicted demand (8333 viewers at t+5, projected CPU 69.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,8333.0
+Normal Traffic,Predictive,36,no_action,"Predicted demand (8288 viewers at t+5, projected CPU 69.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,8288.0
+Normal Traffic,Predictive,37,no_action,"Predicted demand (8349 viewers at t+5, projected CPU 69.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 12 servers.",12,12,12,8349.0
+Normal Traffic,Predictive,38,scale_up,Predicted demand (8428 viewers at t+5) exceeded capacity. Scaled up proactively from 12 to 13 servers.,12,13,13,8428.0
+Normal Traffic,Predictive,39,no_action,"Predicted demand (8532 viewers at t+5, projected CPU 65.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8532.0
+Normal Traffic,Predictive,40,no_action,"Predicted demand (8602 viewers at t+5, projected CPU 66.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8602.0
+Normal Traffic,Predictive,41,no_action,"Predicted demand (8680 viewers at t+5, projected CPU 66.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8680.0
+Normal Traffic,Predictive,42,no_action,"Predicted demand (8669 viewers at t+5, projected CPU 66.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8669.0
+Normal Traffic,Predictive,43,no_action,"Predicted demand (8777 viewers at t+5, projected CPU 67.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8777.0
+Normal Traffic,Predictive,44,no_action,"Predicted demand (8769 viewers at t+5, projected CPU 67.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8769.0
+Normal Traffic,Predictive,45,no_action,"Predicted demand (8816 viewers at t+5, projected CPU 67.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8816.0
+Normal Traffic,Predictive,46,no_action,"Predicted demand (8867 viewers at t+5, projected CPU 68.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8867.0
+Normal Traffic,Predictive,47,no_action,"Predicted demand (8832 viewers at t+5, projected CPU 67.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8832.0
+Normal Traffic,Predictive,48,no_action,"Predicted demand (8867 viewers at t+5, projected CPU 68.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8867.0
+Normal Traffic,Predictive,49,no_action,"Predicted demand (8869 viewers at t+5, projected CPU 68.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8869.0
+Normal Traffic,Predictive,50,no_action,"Predicted demand (8864 viewers at t+5, projected CPU 68.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8864.0
+Normal Traffic,Predictive,51,no_action,"Predicted demand (8882 viewers at t+5, projected CPU 68.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8882.0
+Normal Traffic,Predictive,52,no_action,"Predicted demand (8888 viewers at t+5, projected CPU 68.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8888.0
+Normal Traffic,Predictive,53,no_action,"Predicted demand (8821 viewers at t+5, projected CPU 67.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8821.0
+Normal Traffic,Predictive,54,no_action,"Predicted demand (8877 viewers at t+5, projected CPU 68.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8877.0
+Normal Traffic,Predictive,55,no_action,"Predicted demand (8735 viewers at t+5, projected CPU 67.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8735.0
+Normal Traffic,Predictive,56,no_action,"Predicted demand (8717 viewers at t+5, projected CPU 67.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8717.0
+Normal Traffic,Predictive,57,no_action,"Predicted demand (8741 viewers at t+5, projected CPU 67.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8741.0
+Normal Traffic,Predictive,58,no_action,"Predicted demand (8644 viewers at t+5, projected CPU 66.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8644.0
+Normal Traffic,Predictive,59,no_action,"Predicted demand (8671 viewers at t+5, projected CPU 66.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8671.0
+Normal Traffic,Predictive,60,no_action,"Predicted demand (8353 viewers at t+5, projected CPU 64.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8353.0
+Normal Traffic,Predictive,61,no_action,"Predicted demand (8479 viewers at t+5, projected CPU 65.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8479.0
+Normal Traffic,Predictive,62,no_action,"Predicted demand (8387 viewers at t+5, projected CPU 64.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8387.0
+Normal Traffic,Predictive,63,no_action,"Predicted demand (8395 viewers at t+5, projected CPU 64.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8395.0
+Normal Traffic,Predictive,64,no_action,"Predicted demand (8273 viewers at t+5, projected CPU 63.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8273.0
+Normal Traffic,Predictive,65,no_action,"Predicted demand (8088 viewers at t+5, projected CPU 62.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,8088.0
+Normal Traffic,Predictive,66,no_action,"Predicted demand (7986 viewers at t+5, projected CPU 61.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7986.0
+Normal Traffic,Predictive,67,no_action,"Predicted demand (7906 viewers at t+5, projected CPU 60.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7906.0
+Normal Traffic,Predictive,68,no_action,"Predicted demand (7913 viewers at t+5, projected CPU 60.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7913.0
+Normal Traffic,Predictive,69,no_action,"Predicted demand (7731 viewers at t+5, projected CPU 59.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7731.0
+Normal Traffic,Predictive,70,no_action,"Predicted demand (7569 viewers at t+5, projected CPU 58.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7569.0
+Normal Traffic,Predictive,71,no_action,"Predicted demand (7405 viewers at t+5, projected CPU 57.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7405.0
+Normal Traffic,Predictive,72,no_action,"Predicted demand (7307 viewers at t+5, projected CPU 56.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7307.0
+Normal Traffic,Predictive,73,no_action,"Predicted demand (7363 viewers at t+5, projected CPU 56.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7363.0
+Normal Traffic,Predictive,74,no_action,"Predicted demand (7172 viewers at t+5, projected CPU 55.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7172.0
+Normal Traffic,Predictive,75,no_action,"Predicted demand (7100 viewers at t+5, projected CPU 54.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,7100.0
+Normal Traffic,Predictive,76,no_action,"Predicted demand (6845 viewers at t+5, projected CPU 52.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6845.0
+Normal Traffic,Predictive,77,no_action,"Predicted demand (6813 viewers at t+5, projected CPU 52.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6813.0
+Normal Traffic,Predictive,78,no_action,"Predicted demand (6743 viewers at t+5, projected CPU 51.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6743.0
+Normal Traffic,Predictive,79,no_action,"Predicted demand (6479 viewers at t+5, projected CPU 49.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6479.0
+Normal Traffic,Predictive,80,no_action,"Predicted demand (6452 viewers at t+5, projected CPU 49.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6452.0
+Normal Traffic,Predictive,81,no_action,"Predicted demand (6105 viewers at t+5, projected CPU 47.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6105.0
+Normal Traffic,Predictive,82,no_action,"Predicted demand (6124 viewers at t+5, projected CPU 47.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6124.0
+Normal Traffic,Predictive,83,no_action,"Predicted demand (6045 viewers at t+5, projected CPU 46.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,6045.0
+Normal Traffic,Predictive,84,no_action,"Predicted demand (5833 viewers at t+5, projected CPU 44.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5833.0
+Normal Traffic,Predictive,85,no_action,"Predicted demand (5815 viewers at t+5, projected CPU 44.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5815.0
+Normal Traffic,Predictive,86,no_action,"Predicted demand (5564 viewers at t+5, projected CPU 42.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5564.0
+Normal Traffic,Predictive,87,no_action,"Predicted demand (5627 viewers at t+5, projected CPU 43.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5627.0
+Normal Traffic,Predictive,88,no_action,"Predicted demand (5708 viewers at t+5, projected CPU 43.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5708.0
+Normal Traffic,Predictive,89,no_action,"Predicted demand (5654 viewers at t+5, projected CPU 43.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5654.0
+Normal Traffic,Predictive,90,no_action,"Predicted demand (5681 viewers at t+5, projected CPU 43.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5681.0
+Normal Traffic,Predictive,91,no_action,"Predicted demand (5571 viewers at t+5, projected CPU 42.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5571.0
+Normal Traffic,Predictive,92,no_action,"Predicted demand (5666 viewers at t+5, projected CPU 43.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5666.0
+Normal Traffic,Predictive,93,no_action,"Predicted demand (5644 viewers at t+5, projected CPU 43.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5644.0
+Normal Traffic,Predictive,94,no_action,"Predicted demand (5444 viewers at t+5, projected CPU 41.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5444.0
+Normal Traffic,Predictive,95,no_action,"Predicted demand (5428 viewers at t+5, projected CPU 41.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5428.0
+Normal Traffic,Predictive,96,no_action,"Predicted demand (5262 viewers at t+5, projected CPU 40.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5262.0
+Normal Traffic,Predictive,97,no_action,"Predicted demand (5252 viewers at t+5, projected CPU 40.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5252.0
+Normal Traffic,Predictive,98,no_action,"Predicted demand (5274 viewers at t+5, projected CPU 40.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5274.0
+Normal Traffic,Predictive,99,no_action,"Predicted demand (5087 viewers at t+5, projected CPU 39.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5087.0
+Normal Traffic,Predictive,100,no_action,"Predicted demand (5088 viewers at t+5, projected CPU 39.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5088.0
+Normal Traffic,Predictive,101,no_action,"Predicted demand (5287 viewers at t+5, projected CPU 40.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,5287.0
+Normal Traffic,Predictive,102,no_action,"Predicted demand (4612 viewers at t+5, projected CPU 35.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 13 servers.",13,13,13,4612.0
+Normal Traffic,Predictive,103,no_action,Predicted CPU (29.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3859 viewers at t+5).,13,13,13,3859.0
+Normal Traffic,Predictive,104,no_action,Predicted CPU (27.5%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3579 viewers at t+5).,13,13,13,3579.0
+Normal Traffic,Predictive,105,scale_down,Predicted CPU (27.3%) below 30.0% for 3 consecutive intervals (predicted 3543 viewers at t+5). Scaled down conservatively from 13 to 12 servers (removed server-13).,13,12,12,3543.0
+Normal Traffic,Predictive,106,no_action,Predicted CPU (29.9%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3589 viewers at t+5).,12,12,12,3589.0
+Normal Traffic,Predictive,107,no_action,Predicted CPU (27.6%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3314 viewers at t+5).,12,12,12,3314.0
+Normal Traffic,Predictive,108,scale_down,Predicted CPU (29.8%) below 30.0% for 3 consecutive intervals (predicted 3572 viewers at t+5). Scaled down conservatively from 12 to 11 servers (removed server-12).,12,11,11,3572.0
+Normal Traffic,Predictive,109,no_action,Predicted CPU (28.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3102 viewers at t+5).,11,11,11,3102.0
+Normal Traffic,Predictive,110,no_action,Predicted CPU (28.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3178 viewers at t+5).,11,11,11,3178.0
+Normal Traffic,Predictive,111,scale_down,Predicted CPU (28.0%) below 30.0% for 3 consecutive intervals (predicted 3081 viewers at t+5). Scaled down conservatively from 11 to 10 servers (removed server-11).,11,10,10,3081.0
+Normal Traffic,Predictive,112,no_action,"Predicted demand (3044 viewers at t+5, projected CPU 30.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 10 servers.",10,10,10,3044.0
+Normal Traffic,Predictive,113,no_action,Predicted CPU (28.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2868 viewers at t+5).,10,10,10,2868.0
+Normal Traffic,Predictive,114,no_action,Predicted CPU (28.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2884 viewers at t+5).,10,10,10,2884.0
+Normal Traffic,Predictive,115,scale_down,Predicted CPU (27.6%) below 30.0% for 3 consecutive intervals (predicted 2762 viewers at t+5). Scaled down conservatively from 10 to 9 servers (removed server-10).,10,9,9,2762.0
+Normal Traffic,Predictive,116,no_action,Predicted CPU (29.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2685 viewers at t+5).,9,9,9,2685.0
+Normal Traffic,Predictive,117,no_action,Predicted CPU (28.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2603 viewers at t+5).,9,9,9,2603.0
+Normal Traffic,Predictive,118,scale_down,Predicted CPU (28.5%) below 30.0% for 3 consecutive intervals (predicted 2565 viewers at t+5). Scaled down conservatively from 9 to 8 servers (removed server-9).,9,8,8,2565.0
+Normal Traffic,Predictive,119,no_action,"Predicted demand (2560 viewers at t+5, projected CPU 32.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 8 servers.",8,8,8,2560.0
+Sudden Traffic Spike,Reactive,0,scale_up,CPU utilization (101.2%) exceeded target (70.0%). Scaled up from 2 to 3 servers.,2,3,3,
+Sudden Traffic Spike,Reactive,1,no_action,"CPU utilization (64.9%) is within normal operating range [30.0%, 70.0%].",3,3,3,
+Sudden Traffic Spike,Reactive,2,scale_up,CPU utilization (70.8%) exceeded target (70.0%). Scaled up from 3 to 4 servers.,3,4,4,
+Sudden Traffic Spike,Reactive,3,no_action,"CPU utilization (54.2%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,4,no_action,"CPU utilization (49.2%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,5,no_action,"CPU utilization (51.3%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,6,no_action,"CPU utilization (55.0%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,7,no_action,"CPU utilization (54.8%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,8,no_action,"CPU utilization (56.2%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,9,no_action,"CPU utilization (55.3%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,10,no_action,"CPU utilization (59.5%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,11,no_action,"CPU utilization (60.1%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,12,no_action,"CPU utilization (59.4%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,13,no_action,"CPU utilization (62.3%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,14,no_action,"CPU utilization (61.7%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,15,no_action,"CPU utilization (59.8%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,16,no_action,"CPU utilization (63.0%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,17,no_action,"CPU utilization (61.0%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,18,no_action,"CPU utilization (65.4%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,19,no_action,"CPU utilization (64.2%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,20,no_action,"CPU utilization (64.6%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,21,no_action,"CPU utilization (64.3%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,22,no_action,"CPU utilization (68.8%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,23,no_action,"CPU utilization (66.7%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,24,no_action,"CPU utilization (66.8%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,25,no_action,"CPU utilization (67.6%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,26,no_action,"CPU utilization (69.9%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Sudden Traffic Spike,Reactive,27,scale_up,CPU utilization (70.2%) exceeded target (70.0%). Scaled up from 4 to 5 servers.,4,5,5,
+Sudden Traffic Spike,Reactive,28,no_action,"CPU utilization (56.7%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,29,no_action,"CPU utilization (57.2%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,30,no_action,"CPU utilization (60.4%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,31,no_action,"CPU utilization (56.8%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,32,no_action,"CPU utilization (57.0%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,33,no_action,"CPU utilization (57.0%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,34,no_action,"CPU utilization (59.7%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,35,no_action,"CPU utilization (60.9%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,36,no_action,"CPU utilization (59.4%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,37,no_action,"CPU utilization (58.8%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,38,no_action,"CPU utilization (59.4%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,39,no_action,"CPU utilization (62.6%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,40,no_action,"CPU utilization (63.9%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,41,no_action,"CPU utilization (65.3%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,42,no_action,"CPU utilization (65.9%) is within normal operating range [30.0%, 70.0%].",5,5,5,
+Sudden Traffic Spike,Reactive,43,scale_up,CPU utilization (71.1%) exceeded target (70.0%). Scaled up from 5 to 6 servers.,5,6,6,
+Sudden Traffic Spike,Reactive,44,no_action,"CPU utilization (63.7%) is within normal operating range [30.0%, 70.0%].",6,6,6,
+Sudden Traffic Spike,Reactive,45,scale_up,CPU utilization (70.4%) exceeded target (70.0%). Scaled up from 6 to 7 servers.,6,7,7,
+Sudden Traffic Spike,Reactive,46,no_action,"CPU utilization (69.0%) is within normal operating range [30.0%, 70.0%].",7,7,7,
+Sudden Traffic Spike,Reactive,47,scale_up,CPU utilization (79.1%) exceeded target (70.0%). Scaled up from 7 to 8 servers.,7,8,8,
+Sudden Traffic Spike,Reactive,48,no_action,"CPU utilization (82.2%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 47, cooldown=2 intervals).",8,10,8,
+Sudden Traffic Spike,Reactive,49,scale_up,CPU utilization (97.7%) exceeded target (70.0%). Scaled up from 8 to 12 servers.,8,12,12,
+Sudden Traffic Spike,Reactive,50,no_action,"CPU utilization (78.5%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 49, cooldown=2 intervals).",12,14,12,
+Sudden Traffic Spike,Reactive,51,scale_up,CPU utilization (94.4%) exceeded target (70.0%). Scaled up from 12 to 17 servers.,12,17,17,
+Sudden Traffic Spike,Reactive,52,no_action,"CPU utilization (78.4%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 51, cooldown=2 intervals).",17,20,17,
+Sudden Traffic Spike,Reactive,53,scale_up,CPU utilization (93.0%) exceeded target (70.0%). Scaled up from 17 to 23 servers.,17,23,23,
+Sudden Traffic Spike,Reactive,54,no_action,"CPU utilization (79.6%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 53, cooldown=2 intervals).",23,27,23,
+Sudden Traffic Spike,Reactive,55,scale_up,CPU utilization (90.5%) exceeded target (70.0%). Scaled up from 23 to 30 servers.,23,30,30,
+Sudden Traffic Spike,Reactive,56,no_action,"CPU utilization (77.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,57,no_action,"CPU utilization (84.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,58,no_action,"CPU utilization (89.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,59,no_action,"CPU utilization (93.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,60,no_action,"CPU utilization (93.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,61,no_action,"CPU utilization (92.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,62,no_action,"CPU utilization (89.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,63,no_action,"CPU utilization (84.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,64,no_action,"CPU utilization (77.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Sudden Traffic Spike,Reactive,65,no_action,"CPU utilization (69.7%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Sudden Traffic Spike,Reactive,66,no_action,"CPU utilization (61.1%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Sudden Traffic Spike,Reactive,67,no_action,"CPU utilization (52.7%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Sudden Traffic Spike,Reactive,68,no_action,"CPU utilization (45.1%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Sudden Traffic Spike,Reactive,69,no_action,"CPU utilization (37.6%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Sudden Traffic Spike,Reactive,70,no_action,"CPU utilization (31.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Sudden Traffic Spike,Reactive,71,no_action,CPU utilization (25.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,30,30,30,
+Sudden Traffic Spike,Reactive,72,no_action,CPU utilization (21.5%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,30,30,30,
+Sudden Traffic Spike,Reactive,73,scale_down,CPU utilization (18.5%) below 30.0% for 3 consecutive intervals. Scaled down from 30 to 29 servers (removed server-30).,30,29,29,
+Sudden Traffic Spike,Reactive,74,no_action,CPU utilization (16.5%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,29,29,29,
+Sudden Traffic Spike,Reactive,75,no_action,CPU utilization (14.7%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,29,29,29,
+Sudden Traffic Spike,Reactive,76,scale_down,CPU utilization (13.0%) below 30.0% for 3 consecutive intervals. Scaled down from 29 to 28 servers (removed server-29).,29,28,28,
+Sudden Traffic Spike,Reactive,77,no_action,CPU utilization (12.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,28,28,28,
+Sudden Traffic Spike,Reactive,78,no_action,CPU utilization (12.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,28,28,28,
+Sudden Traffic Spike,Reactive,79,scale_down,CPU utilization (11.4%) below 30.0% for 3 consecutive intervals. Scaled down from 28 to 27 servers (removed server-28).,28,27,27,
+Sudden Traffic Spike,Reactive,80,no_action,CPU utilization (11.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,27,27,27,
+Sudden Traffic Spike,Reactive,81,no_action,CPU utilization (11.2%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,27,27,27,
+Sudden Traffic Spike,Reactive,82,scale_down,CPU utilization (11.1%) below 30.0% for 3 consecutive intervals. Scaled down from 27 to 26 servers (removed server-27).,27,26,26,
+Sudden Traffic Spike,Reactive,83,no_action,CPU utilization (11.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,26,26,26,
+Sudden Traffic Spike,Reactive,84,no_action,CPU utilization (11.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,26,26,26,
+Sudden Traffic Spike,Reactive,85,scale_down,CPU utilization (11.5%) below 30.0% for 3 consecutive intervals. Scaled down from 26 to 25 servers (removed server-26).,26,25,25,
+Sudden Traffic Spike,Reactive,86,no_action,CPU utilization (11.6%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,25,25,25,
+Sudden Traffic Spike,Reactive,87,no_action,CPU utilization (11.7%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,25,25,25,
+Sudden Traffic Spike,Reactive,88,scale_down,CPU utilization (11.7%) below 30.0% for 3 consecutive intervals. Scaled down from 25 to 24 servers (removed server-25).,25,24,24,
+Sudden Traffic Spike,Reactive,89,no_action,CPU utilization (12.1%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,24,24,24,
+Sudden Traffic Spike,Reactive,90,no_action,CPU utilization (12.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,24,24,24,
+Sudden Traffic Spike,Reactive,91,scale_down,CPU utilization (11.7%) below 30.0% for 3 consecutive intervals. Scaled down from 24 to 23 servers (removed server-24).,24,23,23,
+Sudden Traffic Spike,Reactive,92,no_action,CPU utilization (12.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,23,23,23,
+Sudden Traffic Spike,Reactive,93,no_action,CPU utilization (12.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,23,23,23,
+Sudden Traffic Spike,Reactive,94,scale_down,CPU utilization (11.4%) below 30.0% for 3 consecutive intervals. Scaled down from 23 to 22 servers (removed server-23).,23,22,22,
+Sudden Traffic Spike,Reactive,95,no_action,CPU utilization (11.9%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,22,22,22,
+Sudden Traffic Spike,Reactive,96,no_action,CPU utilization (11.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,22,22,22,
+Sudden Traffic Spike,Reactive,97,scale_down,CPU utilization (11.8%) below 30.0% for 3 consecutive intervals. Scaled down from 22 to 21 servers (removed server-22).,22,21,21,
+Sudden Traffic Spike,Reactive,98,no_action,CPU utilization (12.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,21,21,21,
+Sudden Traffic Spike,Reactive,99,no_action,CPU utilization (12.2%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,21,21,21,
+Sudden Traffic Spike,Reactive,100,scale_down,CPU utilization (12.2%) below 30.0% for 3 consecutive intervals. Scaled down from 21 to 20 servers (removed server-21).,21,20,20,
+Sudden Traffic Spike,Reactive,101,no_action,CPU utilization (13.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,20,20,20,
+Sudden Traffic Spike,Reactive,102,no_action,CPU utilization (12.6%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,20,20,20,
+Sudden Traffic Spike,Reactive,103,scale_down,CPU utilization (12.9%) below 30.0% for 3 consecutive intervals. Scaled down from 20 to 19 servers (removed server-20).,20,19,19,
+Sudden Traffic Spike,Reactive,104,no_action,CPU utilization (12.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,19,19,19,
+Sudden Traffic Spike,Reactive,105,no_action,CPU utilization (12.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,19,19,19,
+Sudden Traffic Spike,Reactive,106,scale_down,CPU utilization (12.4%) below 30.0% for 3 consecutive intervals. Scaled down from 19 to 18 servers (removed server-19).,19,18,18,
+Sudden Traffic Spike,Reactive,107,no_action,CPU utilization (13.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,18,18,18,
+Sudden Traffic Spike,Reactive,108,no_action,CPU utilization (13.5%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,18,18,18,
+Sudden Traffic Spike,Reactive,109,scale_down,CPU utilization (12.2%) below 30.0% for 3 consecutive intervals. Scaled down from 18 to 17 servers (removed server-18).,18,17,17,
+Sudden Traffic Spike,Reactive,110,no_action,CPU utilization (13.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,17,17,17,
+Sudden Traffic Spike,Reactive,111,no_action,CPU utilization (13.5%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,17,17,17,
+Sudden Traffic Spike,Reactive,112,scale_down,CPU utilization (13.0%) below 30.0% for 3 consecutive intervals. Scaled down from 17 to 16 servers (removed server-17).,17,16,16,
+Sudden Traffic Spike,Reactive,113,no_action,CPU utilization (13.1%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,16,16,16,
+Sudden Traffic Spike,Reactive,114,no_action,CPU utilization (13.7%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,16,16,16,
+Sudden Traffic Spike,Reactive,115,scale_down,CPU utilization (13.2%) below 30.0% for 3 consecutive intervals. Scaled down from 16 to 15 servers (removed server-16).,16,15,15,
+Sudden Traffic Spike,Reactive,116,no_action,CPU utilization (14.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,15,15,15,
+Sudden Traffic Spike,Reactive,117,no_action,CPU utilization (14.0%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,15,15,15,
+Sudden Traffic Spike,Reactive,118,scale_down,CPU utilization (14.6%) below 30.0% for 3 consecutive intervals. Scaled down from 15 to 14 servers (removed server-15).,15,14,14,
+Sudden Traffic Spike,Reactive,119,no_action,CPU utilization (14.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,14,14,14,
+Sudden Traffic Spike,Predictive,0,no_action,Insufficient historical observations (1/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Sudden Traffic Spike,Predictive,1,no_action,Insufficient historical observations (2/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Sudden Traffic Spike,Predictive,2,no_action,Insufficient historical observations (3/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Sudden Traffic Spike,Predictive,3,no_action,Insufficient historical observations (4/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Sudden Traffic Spike,Predictive,4,no_action,Insufficient historical observations (5/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Sudden Traffic Spike,Predictive,5,scale_up,Predicted demand (2430 viewers at t+5) exceeded capacity. Scaled up proactively from 2 to 4 servers.,2,4,4,2430.0
+Sudden Traffic Spike,Predictive,6,no_action,"Predicted demand (2443 viewers at t+5, projected CPU 61.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2443.0
+Sudden Traffic Spike,Predictive,7,no_action,"Predicted demand (2441 viewers at t+5, projected CPU 61.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2441.0
+Sudden Traffic Spike,Predictive,8,no_action,"Predicted demand (2581 viewers at t+5, projected CPU 64.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2581.0
+Sudden Traffic Spike,Predictive,9,no_action,"Predicted demand (2446 viewers at t+5, projected CPU 61.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2446.0
+Sudden Traffic Spike,Predictive,10,no_action,"Predicted demand (2466 viewers at t+5, projected CPU 61.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2466.0
+Sudden Traffic Spike,Predictive,11,no_action,"Predicted demand (2510 viewers at t+5, projected CPU 62.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2510.0
+Sudden Traffic Spike,Predictive,12,no_action,"Predicted demand (2493 viewers at t+5, projected CPU 62.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2493.0
+Sudden Traffic Spike,Predictive,13,no_action,"Predicted demand (2599 viewers at t+5, projected CPU 65.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2599.0
+Sudden Traffic Spike,Predictive,14,no_action,"Predicted demand (2584 viewers at t+5, projected CPU 64.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2584.0
+Sudden Traffic Spike,Predictive,15,no_action,"Predicted demand (2594 viewers at t+5, projected CPU 64.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2594.0
+Sudden Traffic Spike,Predictive,16,no_action,"Predicted demand (2632 viewers at t+5, projected CPU 65.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2632.0
+Sudden Traffic Spike,Predictive,17,no_action,"Predicted demand (2661 viewers at t+5, projected CPU 66.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2661.0
+Sudden Traffic Spike,Predictive,18,no_action,"Predicted demand (2798 viewers at t+5, projected CPU 70.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2798.0
+Sudden Traffic Spike,Predictive,19,no_action,"Predicted demand (2721 viewers at t+5, projected CPU 68.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2721.0
+Sudden Traffic Spike,Predictive,20,no_action,"Predicted demand (2735 viewers at t+5, projected CPU 68.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2735.0
+Sudden Traffic Spike,Predictive,21,no_action,"Predicted demand (2775 viewers at t+5, projected CPU 69.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 4 servers.",4,4,4,2775.0
+Sudden Traffic Spike,Predictive,22,scale_up,Predicted demand (2936 viewers at t+5) exceeded capacity. Scaled up proactively from 4 to 5 servers.,4,5,5,2936.0
+Sudden Traffic Spike,Predictive,23,no_action,"Predicted demand (2870 viewers at t+5, projected CPU 57.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2870.0
+Sudden Traffic Spike,Predictive,24,no_action,"Predicted demand (2854 viewers at t+5, projected CPU 57.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2854.0
+Sudden Traffic Spike,Predictive,25,no_action,"Predicted demand (2935 viewers at t+5, projected CPU 58.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2935.0
+Sudden Traffic Spike,Predictive,26,no_action,"Predicted demand (2896 viewers at t+5, projected CPU 57.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2896.0
+Sudden Traffic Spike,Predictive,27,no_action,"Predicted demand (2875 viewers at t+5, projected CPU 57.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2875.0
+Sudden Traffic Spike,Predictive,28,no_action,"Predicted demand (2903 viewers at t+5, projected CPU 58.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2903.0
+Sudden Traffic Spike,Predictive,29,no_action,"Predicted demand (2943 viewers at t+5, projected CPU 58.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2943.0
+Sudden Traffic Spike,Predictive,30,no_action,"Predicted demand (3158 viewers at t+5, projected CPU 63.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,3158.0
+Sudden Traffic Spike,Predictive,31,no_action,"Predicted demand (2962 viewers at t+5, projected CPU 59.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2962.0
+Sudden Traffic Spike,Predictive,32,no_action,"Predicted demand (2941 viewers at t+5, projected CPU 58.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2941.0
+Sudden Traffic Spike,Predictive,33,no_action,"Predicted demand (2947 viewers at t+5, projected CPU 58.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,2947.0
+Sudden Traffic Spike,Predictive,34,no_action,"Predicted demand (3171 viewers at t+5, projected CPU 63.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,3171.0
+Sudden Traffic Spike,Predictive,35,no_action,"Predicted demand (3201 viewers at t+5, projected CPU 64.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,3201.0
+Sudden Traffic Spike,Predictive,36,no_action,"Predicted demand (3226 viewers at t+5, projected CPU 64.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,3226.0
+Sudden Traffic Spike,Predictive,37,no_action,"Predicted demand (3174 viewers at t+5, projected CPU 63.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,3174.0
+Sudden Traffic Spike,Predictive,38,no_action,"Predicted demand (3346 viewers at t+5, projected CPU 66.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 5 servers.",5,5,5,3346.0
+Sudden Traffic Spike,Predictive,39,scale_up,Predicted demand (3843 viewers at t+5) exceeded capacity. Scaled up proactively from 5 to 6 servers.,5,6,6,3843.0
+Sudden Traffic Spike,Predictive,40,no_action,"Predicted demand (3996 viewers at t+5, projected CPU 66.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 6 servers.",6,6,6,3996.0
+Sudden Traffic Spike,Predictive,41,scale_up,Predicted demand (4792 viewers at t+5) exceeded capacity. Scaled up proactively from 6 to 7 servers.,6,7,7,4792.0
+Sudden Traffic Spike,Predictive,42,no_action,"Predicted demand (4959 viewers at t+5) requires 8 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 41, cooldown=2 intervals).",7,8,7,4959.0
+Sudden Traffic Spike,Predictive,43,scale_up,Predicted demand (5920 viewers at t+5) exceeded capacity. Scaled up proactively from 7 to 9 servers.,7,9,9,5920.0
+Sudden Traffic Spike,Predictive,44,no_action,"Predicted demand (7039 viewers at t+5) requires 11 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 43, cooldown=2 intervals).",9,11,9,7039.0
+Sudden Traffic Spike,Predictive,45,scale_up,Predicted demand (8127 viewers at t+5) exceeded capacity. Scaled up proactively from 9 to 12 servers.,9,12,12,8127.0
+Sudden Traffic Spike,Predictive,46,no_action,"Predicted demand (10264 viewers at t+5) requires 15 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 45, cooldown=2 intervals).",12,15,12,10264.0
+Sudden Traffic Spike,Predictive,47,scale_up,Predicted demand (12486 viewers at t+5) exceeded capacity. Scaled up proactively from 12 to 18 servers.,12,18,18,12486.0
+Sudden Traffic Spike,Predictive,48,no_action,"Predicted demand (15460 viewers at t+5) requires 23 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 47, cooldown=2 intervals).",18,23,18,15460.0
+Sudden Traffic Spike,Predictive,49,scale_up,Predicted demand (16326 viewers at t+5) exceeded capacity. Scaled up proactively from 18 to 24 servers.,18,24,24,16326.0
+Sudden Traffic Spike,Predictive,50,no_action,"Predicted demand (18765 viewers at t+5) requires 27 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 49, cooldown=2 intervals).",24,27,24,18765.0
+Sudden Traffic Spike,Predictive,51,scale_up,Predicted demand (23177 viewers at t+5) exceeded capacity. Scaled up proactively from 24 to 30 servers.,24,30,30,23177.0
+Sudden Traffic Spike,Predictive,52,no_action,"Predicted demand (24683 viewers at t+5, projected CPU 82.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,24683.0
+Sudden Traffic Spike,Predictive,53,no_action,"Predicted demand (26221 viewers at t+5, projected CPU 87.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,26221.0
+Sudden Traffic Spike,Predictive,54,no_action,"Predicted demand (27321 viewers at t+5, projected CPU 91.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27321.0
+Sudden Traffic Spike,Predictive,55,no_action,"Predicted demand (27676 viewers at t+5, projected CPU 92.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27676.0
+Sudden Traffic Spike,Predictive,56,no_action,"Predicted demand (27784 viewers at t+5, projected CPU 92.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27784.0
+Sudden Traffic Spike,Predictive,57,no_action,"Predicted demand (27736 viewers at t+5, projected CPU 92.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27736.0
+Sudden Traffic Spike,Predictive,58,no_action,"Predicted demand (26656 viewers at t+5, projected CPU 88.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,26656.0
+Sudden Traffic Spike,Predictive,59,no_action,"Predicted demand (23922 viewers at t+5, projected CPU 79.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,23922.0
+Sudden Traffic Spike,Predictive,60,no_action,"Predicted demand (21325 viewers at t+5, projected CPU 71.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,21325.0
+Sudden Traffic Spike,Predictive,61,no_action,"Predicted demand (19296 viewers at t+5, projected CPU 64.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,19296.0
+Sudden Traffic Spike,Predictive,62,no_action,"Predicted demand (17416 viewers at t+5, projected CPU 58.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,17416.0
+Sudden Traffic Spike,Predictive,63,no_action,"Predicted demand (14835 viewers at t+5, projected CPU 49.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,14835.0
+Sudden Traffic Spike,Predictive,64,no_action,"Predicted demand (13254 viewers at t+5, projected CPU 44.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,13254.0
+Sudden Traffic Spike,Predictive,65,no_action,"Predicted demand (10130 viewers at t+5, projected CPU 33.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,10130.0
+Sudden Traffic Spike,Predictive,66,no_action,Predicted CPU (29.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 8747 viewers at t+5).,30,30,30,8747.0
+Sudden Traffic Spike,Predictive,67,no_action,Predicted CPU (25.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 7747 viewers at t+5).,30,30,30,7747.0
+Sudden Traffic Spike,Predictive,68,scale_down,Predicted CPU (24.7%) below 30.0% for 3 consecutive intervals (predicted 7402 viewers at t+5). Scaled down conservatively from 30 to 29 servers (removed server-30).,30,29,29,7402.0
+Sudden Traffic Spike,Predictive,69,no_action,Predicted CPU (22.6%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 6542 viewers at t+5).,29,29,29,6542.0
+Sudden Traffic Spike,Predictive,70,no_action,Predicted CPU (18.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 5472 viewers at t+5).,29,29,29,5472.0
+Sudden Traffic Spike,Predictive,71,scale_down,Predicted CPU (15.2%) below 30.0% for 3 consecutive intervals (predicted 4395 viewers at t+5). Scaled down conservatively from 29 to 28 servers (removed server-29).,29,28,28,4395.0
+Sudden Traffic Spike,Predictive,72,no_action,Predicted CPU (14.5%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 4062 viewers at t+5).,28,28,28,4062.0
+Sudden Traffic Spike,Predictive,73,no_action,Predicted CPU (14.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 4164 viewers at t+5).,28,28,28,4164.0
+Sudden Traffic Spike,Predictive,74,scale_down,Predicted CPU (14.6%) below 30.0% for 3 consecutive intervals (predicted 4092 viewers at t+5). Scaled down conservatively from 28 to 27 servers (removed server-28).,28,27,27,4092.0
+Sudden Traffic Spike,Predictive,75,no_action,Predicted CPU (16.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 4326 viewers at t+5).,27,27,27,4326.0
+Sudden Traffic Spike,Predictive,76,no_action,Predicted CPU (12.6%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3397 viewers at t+5).,27,27,27,3397.0
+Sudden Traffic Spike,Predictive,77,scale_down,Predicted CPU (12.2%) below 30.0% for 3 consecutive intervals (predicted 3285 viewers at t+5). Scaled down conservatively from 27 to 26 servers (removed server-27).,27,26,26,3285.0
+Sudden Traffic Spike,Predictive,78,no_action,Predicted CPU (12.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3235 viewers at t+5).,26,26,26,3235.0
+Sudden Traffic Spike,Predictive,79,no_action,Predicted CPU (12.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3151 viewers at t+5).,26,26,26,3151.0
+Sudden Traffic Spike,Predictive,80,scale_down,Predicted CPU (12.8%) below 30.0% for 3 consecutive intervals (predicted 3335 viewers at t+5). Scaled down conservatively from 26 to 25 servers (removed server-26).,26,25,25,3335.0
+Sudden Traffic Spike,Predictive,81,no_action,Predicted CPU (12.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3047 viewers at t+5).,25,25,25,3047.0
+Sudden Traffic Spike,Predictive,82,no_action,Predicted CPU (12.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3019 viewers at t+5).,25,25,25,3019.0
+Sudden Traffic Spike,Predictive,83,scale_down,Predicted CPU (12.1%) below 30.0% for 3 consecutive intervals (predicted 3016 viewers at t+5). Scaled down conservatively from 25 to 24 servers (removed server-25).,25,24,24,3016.0
+Sudden Traffic Spike,Predictive,84,no_action,Predicted CPU (12.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2950 viewers at t+5).,24,24,24,2950.0
+Sudden Traffic Spike,Predictive,85,no_action,Predicted CPU (12.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3088 viewers at t+5).,24,24,24,3088.0
+Sudden Traffic Spike,Predictive,86,scale_down,Predicted CPU (12.0%) below 30.0% for 3 consecutive intervals (predicted 2869 viewers at t+5). Scaled down conservatively from 24 to 23 servers (removed server-24).,24,23,23,2869.0
+Sudden Traffic Spike,Predictive,87,no_action,Predicted CPU (12.5%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2875 viewers at t+5).,23,23,23,2875.0
+Sudden Traffic Spike,Predictive,88,no_action,Predicted CPU (13.3%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3067 viewers at t+5).,23,23,23,3067.0
+Sudden Traffic Spike,Predictive,89,scale_down,Predicted CPU (12.6%) below 30.0% for 3 consecutive intervals (predicted 2887 viewers at t+5). Scaled down conservatively from 23 to 22 servers (removed server-23).,23,22,22,2887.0
+Sudden Traffic Spike,Predictive,90,no_action,Predicted CPU (13.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2864 viewers at t+5).,22,22,22,2864.0
+Sudden Traffic Spike,Predictive,91,no_action,Predicted CPU (13.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2874 viewers at t+5).,22,22,22,2874.0
+Sudden Traffic Spike,Predictive,92,scale_down,Predicted CPU (13.2%) below 30.0% for 3 consecutive intervals (predicted 2903 viewers at t+5). Scaled down conservatively from 22 to 21 servers (removed server-22).,22,21,21,2903.0
+Sudden Traffic Spike,Predictive,93,no_action,Predicted CPU (13.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2904 viewers at t+5).,21,21,21,2904.0
+Sudden Traffic Spike,Predictive,94,no_action,Predicted CPU (13.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2908 viewers at t+5).,21,21,21,2908.0
+Sudden Traffic Spike,Predictive,95,scale_down,Predicted CPU (13.7%) below 30.0% for 3 consecutive intervals (predicted 2882 viewers at t+5). Scaled down conservatively from 21 to 20 servers (removed server-21).,21,20,20,2882.0
+Sudden Traffic Spike,Predictive,96,no_action,Predicted CPU (14.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2869 viewers at t+5).,20,20,20,2869.0
+Sudden Traffic Spike,Predictive,97,no_action,Predicted CPU (14.2%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2841 viewers at t+5).,20,20,20,2841.0
+Sudden Traffic Spike,Predictive,98,scale_down,Predicted CPU (14.5%) below 30.0% for 3 consecutive intervals (predicted 2893 viewers at t+5). Scaled down conservatively from 20 to 19 servers (removed server-20).,20,19,19,2893.0
+Sudden Traffic Spike,Predictive,99,no_action,Predicted CPU (14.9%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2832 viewers at t+5).,19,19,19,2832.0
+Sudden Traffic Spike,Predictive,100,no_action,Predicted CPU (14.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2821 viewers at t+5).,19,19,19,2821.0
+Sudden Traffic Spike,Predictive,101,scale_down,Predicted CPU (15.2%) below 30.0% for 3 consecutive intervals (predicted 2896 viewers at t+5). Scaled down conservatively from 19 to 18 servers (removed server-19).,19,18,18,2896.0
+Sudden Traffic Spike,Predictive,102,no_action,Predicted CPU (15.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2758 viewers at t+5).,18,18,18,2758.0
+Sudden Traffic Spike,Predictive,103,no_action,Predicted CPU (15.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2868 viewers at t+5).,18,18,18,2868.0
+Sudden Traffic Spike,Predictive,104,scale_down,Predicted CPU (15.1%) below 30.0% for 3 consecutive intervals (predicted 2714 viewers at t+5). Scaled down conservatively from 18 to 17 servers (removed server-18).,18,17,17,2714.0
+Sudden Traffic Spike,Predictive,105,no_action,Predicted CPU (16.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2717 viewers at t+5).,17,17,17,2717.0
+Sudden Traffic Spike,Predictive,106,no_action,Predicted CPU (15.6%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2659 viewers at t+5).,17,17,17,2659.0
+Sudden Traffic Spike,Predictive,107,scale_down,Predicted CPU (15.5%) below 30.0% for 3 consecutive intervals (predicted 2638 viewers at t+5). Scaled down conservatively from 17 to 16 servers (removed server-17).,17,16,16,2638.0
+Sudden Traffic Spike,Predictive,108,no_action,Predicted CPU (16.6%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2658 viewers at t+5).,16,16,16,2658.0
+Sudden Traffic Spike,Predictive,109,no_action,Predicted CPU (16.3%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2606 viewers at t+5).,16,16,16,2606.0
+Sudden Traffic Spike,Predictive,110,scale_down,Predicted CPU (16.4%) below 30.0% for 3 consecutive intervals (predicted 2616 viewers at t+5). Scaled down conservatively from 16 to 15 servers (removed server-16).,16,15,15,2616.0
+Sudden Traffic Spike,Predictive,111,no_action,Predicted CPU (17.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2587 viewers at t+5).,15,15,15,2587.0
+Sudden Traffic Spike,Predictive,112,no_action,Predicted CPU (17.2%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2586 viewers at t+5).,15,15,15,2586.0
+Sudden Traffic Spike,Predictive,113,scale_down,Predicted CPU (17.1%) below 30.0% for 3 consecutive intervals (predicted 2572 viewers at t+5). Scaled down conservatively from 15 to 14 servers (removed server-15).,15,14,14,2572.0
+Sudden Traffic Spike,Predictive,114,no_action,Predicted CPU (18.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2547 viewers at t+5).,14,14,14,2547.0
+Sudden Traffic Spike,Predictive,115,no_action,Predicted CPU (18.3%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2559 viewers at t+5).,14,14,14,2559.0
+Sudden Traffic Spike,Predictive,116,scale_down,Predicted CPU (18.3%) below 30.0% for 3 consecutive intervals (predicted 2561 viewers at t+5). Scaled down conservatively from 14 to 13 servers (removed server-14).,14,13,13,2561.0
+Sudden Traffic Spike,Predictive,117,no_action,Predicted CPU (19.5%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 2537 viewers at t+5).,13,13,13,2537.0
+Sudden Traffic Spike,Predictive,118,no_action,Predicted CPU (19.3%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 2508 viewers at t+5).,13,13,13,2508.0
+Sudden Traffic Spike,Predictive,119,scale_down,Predicted CPU (19.5%) below 30.0% for 3 consecutive intervals (predicted 2529 viewers at t+5). Scaled down conservatively from 13 to 12 servers (removed server-13).,13,12,12,2529.0
+Peak Broadcasting Event,Reactive,0,scale_up,CPU utilization (103.3%) exceeded target (70.0%). Scaled up from 2 to 3 servers.,2,3,3,
+Peak Broadcasting Event,Reactive,1,no_action,"CPU utilization (60.9%) is within normal operating range [30.0%, 70.0%].",3,3,3,
+Peak Broadcasting Event,Reactive,2,scale_up,CPU utilization (79.7%) exceeded target (70.0%). Scaled up from 3 to 4 servers.,3,4,4,
+Peak Broadcasting Event,Reactive,3,no_action,"CPU utilization (67.9%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Peak Broadcasting Event,Reactive,4,no_action,"CPU utilization (61.8%) is within normal operating range [30.0%, 70.0%].",4,4,4,
+Peak Broadcasting Event,Reactive,5,scale_up,CPU utilization (78.0%) exceeded target (70.0%). Scaled up from 4 to 5 servers.,4,5,5,
+Peak Broadcasting Event,Reactive,6,no_action,"CPU utilization (80.9%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 5, cooldown=2 intervals).",5,6,5,
+Peak Broadcasting Event,Reactive,7,scale_up,CPU utilization (93.3%) exceeded target (70.0%). Scaled up from 5 to 7 servers.,5,7,7,
+Peak Broadcasting Event,Reactive,8,no_action,"CPU utilization (79.2%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 7, cooldown=2 intervals).",7,8,7,
+Peak Broadcasting Event,Reactive,9,scale_up,CPU utilization (89.7%) exceeded target (70.0%). Scaled up from 7 to 9 servers.,7,9,9,
+Peak Broadcasting Event,Reactive,10,no_action,"CPU utilization (85.2%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 9, cooldown=2 intervals).",9,11,9,
+Peak Broadcasting Event,Reactive,11,scale_up,CPU utilization (97.2%) exceeded target (70.0%). Scaled up from 9 to 13 servers.,9,13,13,
+Peak Broadcasting Event,Reactive,12,no_action,"CPU utilization (75.2%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 11, cooldown=2 intervals).",13,14,13,
+Peak Broadcasting Event,Reactive,13,scale_up,CPU utilization (86.7%) exceeded target (70.0%). Scaled up from 13 to 17 servers.,13,17,17,
+Peak Broadcasting Event,Reactive,14,no_action,"CPU utilization (73.4%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 13, cooldown=2 intervals).",17,18,17,
+Peak Broadcasting Event,Reactive,15,scale_up,CPU utilization (79.9%) exceeded target (70.0%). Scaled up from 17 to 20 servers.,17,20,20,
+Peak Broadcasting Event,Reactive,16,no_action,"CPU utilization (76.7%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 15, cooldown=2 intervals).",20,22,20,
+Peak Broadcasting Event,Reactive,17,scale_up,CPU utilization (82.8%) exceeded target (70.0%). Scaled up from 20 to 24 servers.,20,24,24,
+Peak Broadcasting Event,Reactive,18,no_action,"CPU utilization (77.3%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 17, cooldown=2 intervals).",24,27,24,
+Peak Broadcasting Event,Reactive,19,scale_up,CPU utilization (83.2%) exceeded target (70.0%). Scaled up from 24 to 29 servers.,24,29,29,
+Peak Broadcasting Event,Reactive,20,no_action,"CPU utilization (74.5%) exceeds target (70.0%), but autoscaler is in cooldown (last scaled at interval 19, cooldown=2 intervals).",29,30,29,
+Peak Broadcasting Event,Reactive,21,scale_up,CPU utilization (79.9%) exceeded target (70.0%). Scaled up from 29 to 30 servers.,29,30,30,
+Peak Broadcasting Event,Reactive,22,no_action,"CPU utilization (84.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,23,no_action,"CPU utilization (89.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,24,no_action,"CPU utilization (94.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,25,no_action,"CPU utilization (100.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,26,no_action,"CPU utilization (106.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,27,no_action,"CPU utilization (112.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,28,no_action,"CPU utilization (118.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,29,no_action,"CPU utilization (123.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,30,no_action,"CPU utilization (130.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,31,no_action,"CPU utilization (133.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,32,no_action,"CPU utilization (138.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,33,no_action,"CPU utilization (143.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,34,no_action,"CPU utilization (149.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,35,no_action,"CPU utilization (154.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,36,no_action,"CPU utilization (157.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,37,no_action,"CPU utilization (160.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,38,no_action,"CPU utilization (164.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,39,no_action,"CPU utilization (168.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,40,no_action,"CPU utilization (172.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,41,no_action,"CPU utilization (174.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,42,no_action,"CPU utilization (176.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,43,no_action,"CPU utilization (178.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,44,no_action,"CPU utilization (180.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,45,no_action,"CPU utilization (181.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,46,no_action,"CPU utilization (183.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,47,no_action,"CPU utilization (183.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,48,no_action,"CPU utilization (183.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,49,no_action,"CPU utilization (183.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,50,no_action,"CPU utilization (183.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,51,no_action,"CPU utilization (183.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,52,no_action,"CPU utilization (182.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,53,no_action,"CPU utilization (183.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,54,no_action,"CPU utilization (183.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,55,no_action,"CPU utilization (182.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,56,no_action,"CPU utilization (183.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,57,no_action,"CPU utilization (184.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,58,no_action,"CPU utilization (182.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,59,no_action,"CPU utilization (184.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,60,no_action,"CPU utilization (182.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,61,no_action,"CPU utilization (183.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,62,no_action,"CPU utilization (183.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,63,no_action,"CPU utilization (183.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,64,no_action,"CPU utilization (183.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,65,no_action,"CPU utilization (183.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,66,no_action,"CPU utilization (183.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,67,no_action,"CPU utilization (183.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,68,no_action,"CPU utilization (184.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,69,no_action,"CPU utilization (183.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,70,no_action,"CPU utilization (182.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,71,no_action,"CPU utilization (182.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,72,no_action,"CPU utilization (182.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,73,no_action,"CPU utilization (183.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,74,no_action,"CPU utilization (182.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,75,no_action,"CPU utilization (182.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,76,no_action,"CPU utilization (180.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,77,no_action,"CPU utilization (179.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,78,no_action,"CPU utilization (177.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,79,no_action,"CPU utilization (174.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,80,no_action,"CPU utilization (172.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,81,no_action,"CPU utilization (169.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,82,no_action,"CPU utilization (166.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,83,no_action,"CPU utilization (162.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,84,no_action,"CPU utilization (158.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,85,no_action,"CPU utilization (155.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,86,no_action,"CPU utilization (151.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,87,no_action,"CPU utilization (147.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,88,no_action,"CPU utilization (143.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,89,no_action,"CPU utilization (138.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,90,no_action,"CPU utilization (133.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,91,no_action,"CPU utilization (128.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,92,no_action,"CPU utilization (122.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,93,no_action,"CPU utilization (118.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,94,no_action,"CPU utilization (111.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,95,no_action,"CPU utilization (106.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,96,no_action,"CPU utilization (101.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,97,no_action,"CPU utilization (96.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,98,no_action,"CPU utilization (92.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,99,no_action,"CPU utilization (86.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,100,no_action,"CPU utilization (81.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,101,no_action,"CPU utilization (77.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,102,no_action,"CPU utilization (71.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Peak Broadcasting Event,Reactive,103,no_action,"CPU utilization (67.9%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,104,no_action,"CPU utilization (62.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,105,no_action,"CPU utilization (58.4%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,106,no_action,"CPU utilization (53.7%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,107,no_action,"CPU utilization (50.3%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,108,no_action,"CPU utilization (47.5%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,109,no_action,"CPU utilization (42.3%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,110,no_action,"CPU utilization (40.7%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,111,no_action,"CPU utilization (37.8%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,112,no_action,"CPU utilization (34.6%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,113,no_action,"CPU utilization (31.8%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,114,no_action,"CPU utilization (31.1%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Peak Broadcasting Event,Reactive,115,no_action,CPU utilization (29.1%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,30,30,30,
+Peak Broadcasting Event,Reactive,116,no_action,CPU utilization (28.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,30,30,30,
+Peak Broadcasting Event,Reactive,117,scale_down,CPU utilization (27.4%) below 30.0% for 3 consecutive intervals. Scaled down from 30 to 29 servers (removed server-30).,30,29,29,
+Peak Broadcasting Event,Reactive,118,no_action,CPU utilization (29.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,29,29,29,
+Peak Broadcasting Event,Reactive,119,no_action,CPU utilization (27.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,29,29,29,
+Peak Broadcasting Event,Predictive,0,no_action,Insufficient historical observations (1/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Peak Broadcasting Event,Predictive,1,no_action,Insufficient historical observations (2/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Peak Broadcasting Event,Predictive,2,no_action,Insufficient historical observations (3/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Peak Broadcasting Event,Predictive,3,no_action,Insufficient historical observations (4/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Peak Broadcasting Event,Predictive,4,no_action,Insufficient historical observations (5/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Peak Broadcasting Event,Predictive,5,scale_up,Predicted demand (5932 viewers at t+5) exceeded capacity. Scaled up proactively from 2 to 9 servers.,2,9,9,5932.0
+Peak Broadcasting Event,Predictive,6,no_action,"Predicted demand (9005 viewers at t+5) requires 13 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 5, cooldown=2 intervals).",9,13,9,9005.0
+Peak Broadcasting Event,Predictive,7,scale_up,Predicted demand (9436 viewers at t+5) exceeded capacity. Scaled up proactively from 9 to 14 servers.,9,14,14,9436.0
+Peak Broadcasting Event,Predictive,8,no_action,"Predicted demand (11545 viewers at t+5) requires 17 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 7, cooldown=2 intervals).",14,17,14,11545.0
+Peak Broadcasting Event,Predictive,9,scale_up,Predicted demand (12437 viewers at t+5) exceeded capacity. Scaled up proactively from 14 to 18 servers.,14,18,18,12437.0
+Peak Broadcasting Event,Predictive,10,no_action,"Predicted demand (14496 viewers at t+5) requires 21 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 9, cooldown=2 intervals).",18,21,18,14496.0
+Peak Broadcasting Event,Predictive,11,scale_up,Predicted demand (15243 viewers at t+5) exceeded capacity. Scaled up proactively from 18 to 22 servers.,18,22,22,15243.0
+Peak Broadcasting Event,Predictive,12,no_action,"Predicted demand (16895 viewers at t+5) requires 25 servers, but predictive scale-up is deferred due to active cooldown (last scaled at interval 11, cooldown=2 intervals).",22,25,22,16895.0
+Peak Broadcasting Event,Predictive,13,scale_up,Predicted demand (19733 viewers at t+5) exceeded capacity. Scaled up proactively from 22 to 29 servers.,22,29,29,19733.0
+Peak Broadcasting Event,Predictive,14,no_action,"Predicted demand (20165 viewers at t+5, projected CPU 69.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 29 servers.",29,29,29,20165.0
+Peak Broadcasting Event,Predictive,15,scale_up,Predicted demand (20700 viewers at t+5) exceeded capacity. Scaled up proactively from 29 to 30 servers.,29,30,30,20700.0
+Peak Broadcasting Event,Predictive,16,no_action,"Predicted demand (23433 viewers at t+5, projected CPU 78.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,23433.0
+Peak Broadcasting Event,Predictive,17,no_action,"Predicted demand (23886 viewers at t+5, projected CPU 79.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,23886.0
+Peak Broadcasting Event,Predictive,18,no_action,"Predicted demand (27446 viewers at t+5, projected CPU 91.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27446.0
+Peak Broadcasting Event,Predictive,19,no_action,"Predicted demand (28500 viewers at t+5, projected CPU 95.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,28500.0
+Peak Broadcasting Event,Predictive,20,no_action,"Predicted demand (30023 viewers at t+5, projected CPU 100.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,30023.0
+Peak Broadcasting Event,Predictive,21,no_action,"Predicted demand (31138 viewers at t+5, projected CPU 103.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,31138.0
+Peak Broadcasting Event,Predictive,22,no_action,"Predicted demand (32521 viewers at t+5, projected CPU 108.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,32521.0
+Peak Broadcasting Event,Predictive,23,no_action,"Predicted demand (32088 viewers at t+5, projected CPU 107.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,32088.0
+Peak Broadcasting Event,Predictive,24,no_action,"Predicted demand (35840 viewers at t+5, projected CPU 119.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,35840.0
+Peak Broadcasting Event,Predictive,25,no_action,"Predicted demand (38131 viewers at t+5, projected CPU 127.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,38131.0
+Peak Broadcasting Event,Predictive,26,no_action,"Predicted demand (39486 viewers at t+5, projected CPU 131.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,39486.0
+Peak Broadcasting Event,Predictive,27,no_action,"Predicted demand (41089 viewers at t+5, projected CPU 137.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,41089.0
+Peak Broadcasting Event,Predictive,28,no_action,"Predicted demand (43025 viewers at t+5, projected CPU 143.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,43025.0
+Peak Broadcasting Event,Predictive,29,no_action,"Predicted demand (43913 viewers at t+5, projected CPU 146.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,43913.0
+Peak Broadcasting Event,Predictive,30,no_action,"Predicted demand (45530 viewers at t+5, projected CPU 151.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,45530.0
+Peak Broadcasting Event,Predictive,31,no_action,"Predicted demand (45514 viewers at t+5, projected CPU 151.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,45514.0
+Peak Broadcasting Event,Predictive,32,no_action,"Predicted demand (46672 viewers at t+5, projected CPU 155.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,46672.0
+Peak Broadcasting Event,Predictive,33,no_action,"Predicted demand (47892 viewers at t+5, projected CPU 159.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,47892.0
+Peak Broadcasting Event,Predictive,34,no_action,"Predicted demand (49069 viewers at t+5, projected CPU 163.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49069.0
+Peak Broadcasting Event,Predictive,35,no_action,"Predicted demand (50509 viewers at t+5, projected CPU 168.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,50509.0
+Peak Broadcasting Event,Predictive,36,no_action,"Predicted demand (51280 viewers at t+5, projected CPU 170.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,51280.0
+Peak Broadcasting Event,Predictive,37,no_action,"Predicted demand (52224 viewers at t+5, projected CPU 174.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,52224.0
+Peak Broadcasting Event,Predictive,38,no_action,"Predicted demand (53116 viewers at t+5, projected CPU 177.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,53116.0
+Peak Broadcasting Event,Predictive,39,no_action,"Predicted demand (53602 viewers at t+5, projected CPU 178.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,53602.0
+Peak Broadcasting Event,Predictive,40,no_action,"Predicted demand (53956 viewers at t+5, projected CPU 179.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,53956.0
+Peak Broadcasting Event,Predictive,41,no_action,"Predicted demand (54383 viewers at t+5, projected CPU 181.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54383.0
+Peak Broadcasting Event,Predictive,42,no_action,"Predicted demand (53984 viewers at t+5, projected CPU 179.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,53984.0
+Peak Broadcasting Event,Predictive,43,no_action,"Predicted demand (54362 viewers at t+5, projected CPU 181.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54362.0
+Peak Broadcasting Event,Predictive,44,no_action,"Predicted demand (54804 viewers at t+5, projected CPU 182.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54804.0
+Peak Broadcasting Event,Predictive,45,no_action,"Predicted demand (55049 viewers at t+5, projected CPU 183.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55049.0
+Peak Broadcasting Event,Predictive,46,no_action,"Predicted demand (55038 viewers at t+5, projected CPU 183.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55038.0
+Peak Broadcasting Event,Predictive,47,no_action,"Predicted demand (54852 viewers at t+5, projected CPU 182.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54852.0
+Peak Broadcasting Event,Predictive,48,no_action,"Predicted demand (54941 viewers at t+5, projected CPU 183.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54941.0
+Peak Broadcasting Event,Predictive,49,no_action,"Predicted demand (54877 viewers at t+5, projected CPU 182.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54877.0
+Peak Broadcasting Event,Predictive,50,no_action,"Predicted demand (54864 viewers at t+5, projected CPU 182.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54864.0
+Peak Broadcasting Event,Predictive,51,no_action,"Predicted demand (54951 viewers at t+5, projected CPU 183.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54951.0
+Peak Broadcasting Event,Predictive,52,no_action,"Predicted demand (55081 viewers at t+5, projected CPU 183.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55081.0
+Peak Broadcasting Event,Predictive,53,no_action,"Predicted demand (54902 viewers at t+5, projected CPU 183.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54902.0
+Peak Broadcasting Event,Predictive,54,no_action,"Predicted demand (55038 viewers at t+5, projected CPU 183.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55038.0
+Peak Broadcasting Event,Predictive,55,no_action,"Predicted demand (54793 viewers at t+5, projected CPU 182.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54793.0
+Peak Broadcasting Event,Predictive,56,no_action,"Predicted demand (54893 viewers at t+5, projected CPU 183.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54893.0
+Peak Broadcasting Event,Predictive,57,no_action,"Predicted demand (55073 viewers at t+5, projected CPU 183.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55073.0
+Peak Broadcasting Event,Predictive,58,no_action,"Predicted demand (55018 viewers at t+5, projected CPU 183.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55018.0
+Peak Broadcasting Event,Predictive,59,no_action,"Predicted demand (55073 viewers at t+5, projected CPU 183.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55073.0
+Peak Broadcasting Event,Predictive,60,no_action,"Predicted demand (55058 viewers at t+5, projected CPU 183.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55058.0
+Peak Broadcasting Event,Predictive,61,no_action,"Predicted demand (54990 viewers at t+5, projected CPU 183.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54990.0
+Peak Broadcasting Event,Predictive,62,no_action,"Predicted demand (54926 viewers at t+5, projected CPU 183.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54926.0
+Peak Broadcasting Event,Predictive,63,no_action,"Predicted demand (55090 viewers at t+5, projected CPU 183.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,55090.0
+Peak Broadcasting Event,Predictive,64,no_action,"Predicted demand (54927 viewers at t+5, projected CPU 183.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54927.0
+Peak Broadcasting Event,Predictive,65,no_action,"Predicted demand (54807 viewers at t+5, projected CPU 182.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54807.0
+Peak Broadcasting Event,Predictive,66,no_action,"Predicted demand (54782 viewers at t+5, projected CPU 182.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54782.0
+Peak Broadcasting Event,Predictive,67,no_action,"Predicted demand (54798 viewers at t+5, projected CPU 182.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54798.0
+Peak Broadcasting Event,Predictive,68,no_action,"Predicted demand (54940 viewers at t+5, projected CPU 183.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54940.0
+Peak Broadcasting Event,Predictive,69,no_action,"Predicted demand (54760 viewers at t+5, projected CPU 182.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54760.0
+Peak Broadcasting Event,Predictive,70,no_action,"Predicted demand (54536 viewers at t+5, projected CPU 181.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54536.0
+Peak Broadcasting Event,Predictive,71,no_action,"Predicted demand (54072 viewers at t+5, projected CPU 180.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,54072.0
+Peak Broadcasting Event,Predictive,72,no_action,"Predicted demand (53712 viewers at t+5, projected CPU 179.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,53712.0
+Peak Broadcasting Event,Predictive,73,no_action,"Predicted demand (53403 viewers at t+5, projected CPU 178.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,53403.0
+Peak Broadcasting Event,Predictive,74,no_action,"Predicted demand (52357 viewers at t+5, projected CPU 174.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,52357.0
+Peak Broadcasting Event,Predictive,75,no_action,"Predicted demand (51850 viewers at t+5, projected CPU 172.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,51850.0
+Peak Broadcasting Event,Predictive,76,no_action,"Predicted demand (50989 viewers at t+5, projected CPU 170.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,50989.0
+Peak Broadcasting Event,Predictive,77,no_action,"Predicted demand (50285 viewers at t+5, projected CPU 167.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,50285.0
+Peak Broadcasting Event,Predictive,78,no_action,"Predicted demand (49390 viewers at t+5, projected CPU 164.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49390.0
+Peak Broadcasting Event,Predictive,79,no_action,"Predicted demand (48379 viewers at t+5, projected CPU 161.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,48379.0
+Peak Broadcasting Event,Predictive,80,no_action,"Predicted demand (47536 viewers at t+5, projected CPU 158.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,47536.0
+Peak Broadcasting Event,Predictive,81,no_action,"Predicted demand (46012 viewers at t+5, projected CPU 153.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,46012.0
+Peak Broadcasting Event,Predictive,82,no_action,"Predicted demand (44675 viewers at t+5, projected CPU 148.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,44675.0
+Peak Broadcasting Event,Predictive,83,no_action,"Predicted demand (43688 viewers at t+5, projected CPU 145.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,43688.0
+Peak Broadcasting Event,Predictive,84,no_action,"Predicted demand (42542 viewers at t+5, projected CPU 141.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,42542.0
+Peak Broadcasting Event,Predictive,85,no_action,"Predicted demand (41261 viewers at t+5, projected CPU 137.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,41261.0
+Peak Broadcasting Event,Predictive,86,no_action,"Predicted demand (38971 viewers at t+5, projected CPU 129.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,38971.0
+Peak Broadcasting Event,Predictive,87,no_action,"Predicted demand (37578 viewers at t+5, projected CPU 125.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,37578.0
+Peak Broadcasting Event,Predictive,88,no_action,"Predicted demand (37564 viewers at t+5, projected CPU 125.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,37564.0
+Peak Broadcasting Event,Predictive,89,no_action,"Predicted demand (36925 viewers at t+5, projected CPU 123.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,36925.0
+Peak Broadcasting Event,Predictive,90,no_action,"Predicted demand (36318 viewers at t+5, projected CPU 121.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,36318.0
+Peak Broadcasting Event,Predictive,91,no_action,"Predicted demand (35342 viewers at t+5, projected CPU 117.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,35342.0
+Peak Broadcasting Event,Predictive,92,no_action,"Predicted demand (34556 viewers at t+5, projected CPU 115.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,34556.0
+Peak Broadcasting Event,Predictive,93,no_action,"Predicted demand (32998 viewers at t+5, projected CPU 110.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,32998.0
+Peak Broadcasting Event,Predictive,94,no_action,"Predicted demand (31439 viewers at t+5, projected CPU 104.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,31439.0
+Peak Broadcasting Event,Predictive,95,no_action,"Predicted demand (28997 viewers at t+5, projected CPU 96.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,28997.0
+Peak Broadcasting Event,Predictive,96,no_action,"Predicted demand (26544 viewers at t+5, projected CPU 88.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,26544.0
+Peak Broadcasting Event,Predictive,97,no_action,"Predicted demand (24077 viewers at t+5, projected CPU 80.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,24077.0
+Peak Broadcasting Event,Predictive,98,no_action,"Predicted demand (21056 viewers at t+5, projected CPU 70.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,21056.0
+Peak Broadcasting Event,Predictive,99,no_action,"Predicted demand (17799 viewers at t+5, projected CPU 59.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,17799.0
+Peak Broadcasting Event,Predictive,100,no_action,"Predicted demand (18114 viewers at t+5, projected CPU 60.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,18114.0
+Peak Broadcasting Event,Predictive,101,no_action,"Predicted demand (18940 viewers at t+5, projected CPU 63.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,18940.0
+Peak Broadcasting Event,Predictive,102,no_action,"Predicted demand (14830 viewers at t+5, projected CPU 49.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,14830.0
+Peak Broadcasting Event,Predictive,103,no_action,"Predicted demand (15267 viewers at t+5, projected CPU 50.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,15267.0
+Peak Broadcasting Event,Predictive,104,no_action,"Predicted demand (12254 viewers at t+5, projected CPU 40.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,12254.0
+Peak Broadcasting Event,Predictive,105,no_action,"Predicted demand (14489 viewers at t+5, projected CPU 48.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,14489.0
+Peak Broadcasting Event,Predictive,106,no_action,"Predicted demand (13135 viewers at t+5, projected CPU 43.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,13135.0
+Peak Broadcasting Event,Predictive,107,no_action,"Predicted demand (12963 viewers at t+5, projected CPU 43.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,12963.0
+Peak Broadcasting Event,Predictive,108,no_action,"Predicted demand (12542 viewers at t+5, projected CPU 41.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,12542.0
+Peak Broadcasting Event,Predictive,109,no_action,"Predicted demand (10858 viewers at t+5, projected CPU 36.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,10858.0
+Peak Broadcasting Event,Predictive,110,no_action,"Predicted demand (13058 viewers at t+5, projected CPU 43.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,13058.0
+Peak Broadcasting Event,Predictive,111,no_action,"Predicted demand (12161 viewers at t+5, projected CPU 40.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,12161.0
+Peak Broadcasting Event,Predictive,112,no_action,"Predicted demand (9929 viewers at t+5, projected CPU 33.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,9929.0
+Peak Broadcasting Event,Predictive,113,no_action,"Predicted demand (9775 viewers at t+5, projected CPU 32.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,9775.0
+Peak Broadcasting Event,Predictive,114,no_action,Predicted CPU (25.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 7595 viewers at t+5).,30,30,30,7595.0
+Peak Broadcasting Event,Predictive,115,no_action,Predicted CPU (20.7%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 6223 viewers at t+5).,30,30,30,6223.0
+Peak Broadcasting Event,Predictive,116,scale_down,Predicted CPU (23.4%) below 30.0% for 3 consecutive intervals (predicted 7033 viewers at t+5). Scaled down conservatively from 30 to 29 servers (removed server-30).,30,29,29,7033.0
+Peak Broadcasting Event,Predictive,117,no_action,Predicted CPU (23.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 6769 viewers at t+5).,29,29,29,6769.0
+Peak Broadcasting Event,Predictive,118,no_action,Predicted CPU (24.5%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 7117 viewers at t+5).,29,29,29,7117.0
+Peak Broadcasting Event,Predictive,119,scale_down,Predicted CPU (22.5%) below 30.0% for 3 consecutive intervals (predicted 6535 viewers at t+5). Scaled down conservatively from 29 to 28 servers (removed server-29).,29,28,28,6535.0
+Event Ending,Reactive,0,scale_up,CPU utilization (2502.8%) exceeded target (70.0%). Scaled up from 2 to 30 servers.,2,30,30,
+Event Ending,Reactive,1,no_action,"CPU utilization (166.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,2,no_action,"CPU utilization (167.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,3,no_action,"CPU utilization (167.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,4,no_action,"CPU utilization (165.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,5,no_action,"CPU utilization (165.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,6,no_action,"CPU utilization (166.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,7,no_action,"CPU utilization (166.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,8,no_action,"CPU utilization (166.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,9,no_action,"CPU utilization (166.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,10,no_action,"CPU utilization (167.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,11,no_action,"CPU utilization (167.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,12,no_action,"CPU utilization (166.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,13,no_action,"CPU utilization (167.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,14,no_action,"CPU utilization (166.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,15,no_action,"CPU utilization (166.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,16,no_action,"CPU utilization (166.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,17,no_action,"CPU utilization (166.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,18,no_action,"CPU utilization (167.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,19,no_action,"CPU utilization (166.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,20,no_action,"CPU utilization (166.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,21,no_action,"CPU utilization (165.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,22,no_action,"CPU utilization (166.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,23,no_action,"CPU utilization (165.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,24,no_action,"CPU utilization (165.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,25,no_action,"CPU utilization (164.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,26,no_action,"CPU utilization (164.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,27,no_action,"CPU utilization (163.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,28,no_action,"CPU utilization (163.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,29,no_action,"CPU utilization (162.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,30,no_action,"CPU utilization (162.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,31,no_action,"CPU utilization (160.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,32,no_action,"CPU utilization (159.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,33,no_action,"CPU utilization (157.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,34,no_action,"CPU utilization (157.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,35,no_action,"CPU utilization (156.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,36,no_action,"CPU utilization (154.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,37,no_action,"CPU utilization (152.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,38,no_action,"CPU utilization (151.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,39,no_action,"CPU utilization (150.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,40,no_action,"CPU utilization (149.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,41,no_action,"CPU utilization (147.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,42,no_action,"CPU utilization (145.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,43,no_action,"CPU utilization (144.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,44,no_action,"CPU utilization (142.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,45,no_action,"CPU utilization (140.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,46,no_action,"CPU utilization (139.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,47,no_action,"CPU utilization (137.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,48,no_action,"CPU utilization (135.4%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,49,no_action,"CPU utilization (133.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,50,no_action,"CPU utilization (131.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,51,no_action,"CPU utilization (129.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,52,no_action,"CPU utilization (125.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,53,no_action,"CPU utilization (124.5%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,54,no_action,"CPU utilization (122.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,55,no_action,"CPU utilization (119.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,56,no_action,"CPU utilization (117.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,57,no_action,"CPU utilization (116.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,58,no_action,"CPU utilization (112.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,59,no_action,"CPU utilization (111.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,60,no_action,"CPU utilization (107.8%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,61,no_action,"CPU utilization (106.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,62,no_action,"CPU utilization (104.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,63,no_action,"CPU utilization (102.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,64,no_action,"CPU utilization (99.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,65,no_action,"CPU utilization (97.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,66,no_action,"CPU utilization (94.2%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,67,no_action,"CPU utilization (91.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,68,no_action,"CPU utilization (90.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,69,no_action,"CPU utilization (87.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,70,no_action,"CPU utilization (83.9%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,71,no_action,"CPU utilization (81.6%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,72,no_action,"CPU utilization (79.3%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,73,no_action,"CPU utilization (77.7%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,74,no_action,"CPU utilization (75.1%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,75,no_action,"CPU utilization (73.0%) exceeds target (70.0%), but desired servers (30) <= active servers (30).",30,30,30,
+Event Ending,Reactive,76,no_action,"CPU utilization (70.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,77,no_action,"CPU utilization (68.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,78,no_action,"CPU utilization (65.9%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,79,no_action,"CPU utilization (63.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,80,no_action,"CPU utilization (61.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,81,no_action,"CPU utilization (58.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,82,no_action,"CPU utilization (56.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,83,no_action,"CPU utilization (54.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,84,no_action,"CPU utilization (51.3%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,85,no_action,"CPU utilization (50.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,86,no_action,"CPU utilization (47.5%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,87,no_action,"CPU utilization (45.7%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,88,no_action,"CPU utilization (44.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,89,no_action,"CPU utilization (42.0%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,90,no_action,"CPU utilization (40.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,91,no_action,"CPU utilization (37.8%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,92,no_action,"CPU utilization (35.8%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,93,no_action,"CPU utilization (34.2%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,94,no_action,"CPU utilization (31.5%) is within normal operating range [30.0%, 70.0%].",30,30,30,
+Event Ending,Reactive,95,no_action,CPU utilization (30.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,30,30,30,
+Event Ending,Reactive,96,no_action,CPU utilization (28.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,30,30,30,
+Event Ending,Reactive,97,scale_down,CPU utilization (27.0%) below 30.0% for 3 consecutive intervals. Scaled down from 30 to 29 servers (removed server-30).,30,29,29,
+Event Ending,Reactive,98,no_action,CPU utilization (27.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,29,29,29,
+Event Ending,Reactive,99,no_action,CPU utilization (25.0%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,29,29,29,
+Event Ending,Reactive,100,scale_down,CPU utilization (23.9%) below 30.0% for 3 consecutive intervals. Scaled down from 29 to 28 servers (removed server-29).,29,28,28,
+Event Ending,Reactive,101,no_action,CPU utilization (24.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,28,28,28,
+Event Ending,Reactive,102,no_action,CPU utilization (21.9%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,28,28,28,
+Event Ending,Reactive,103,scale_down,CPU utilization (21.4%) below 30.0% for 3 consecutive intervals. Scaled down from 28 to 27 servers (removed server-28).,28,27,27,
+Event Ending,Reactive,104,no_action,CPU utilization (19.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,27,27,27,
+Event Ending,Reactive,105,no_action,CPU utilization (19.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,27,27,27,
+Event Ending,Reactive,106,scale_down,CPU utilization (17.5%) below 30.0% for 3 consecutive intervals. Scaled down from 27 to 26 servers (removed server-27).,27,26,26,
+Event Ending,Reactive,107,no_action,CPU utilization (17.5%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,26,26,26,
+Event Ending,Reactive,108,no_action,CPU utilization (17.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,26,26,26,
+Event Ending,Reactive,109,scale_down,CPU utilization (14.7%) below 30.0% for 3 consecutive intervals. Scaled down from 26 to 25 servers (removed server-26).,26,25,25,
+Event Ending,Reactive,110,no_action,CPU utilization (16.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,25,25,25,
+Event Ending,Reactive,111,no_action,CPU utilization (15.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,25,25,25,
+Event Ending,Reactive,112,scale_down,CPU utilization (13.8%) below 30.0% for 3 consecutive intervals. Scaled down from 25 to 24 servers (removed server-25).,25,24,24,
+Event Ending,Reactive,113,no_action,CPU utilization (13.1%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,24,24,24,
+Event Ending,Reactive,114,no_action,CPU utilization (13.7%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,24,24,24,
+Event Ending,Reactive,115,scale_down,CPU utilization (12.9%) below 30.0% for 3 consecutive intervals. Scaled down from 24 to 23 servers (removed server-24).,24,23,23,
+Event Ending,Reactive,116,no_action,CPU utilization (13.7%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,23,23,23,
+Event Ending,Reactive,117,no_action,CPU utilization (13.3%) below scale-down threshold (30.0%) for 2/3 consecutive intervals.,23,23,23,
+Event Ending,Reactive,118,scale_down,CPU utilization (14.3%) below 30.0% for 3 consecutive intervals. Scaled down from 23 to 22 servers (removed server-23).,23,22,22,
+Event Ending,Reactive,119,no_action,CPU utilization (13.4%) below scale-down threshold (30.0%) for 1/3 consecutive intervals.,22,22,22,
+Event Ending,Predictive,0,no_action,Insufficient historical observations (1/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Event Ending,Predictive,1,no_action,Insufficient historical observations (2/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Event Ending,Predictive,2,no_action,Insufficient historical observations (3/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Event Ending,Predictive,3,no_action,Insufficient historical observations (4/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Event Ending,Predictive,4,no_action,Insufficient historical observations (5/6); maintaining 2 active servers until history reaches 6 intervals.,2,2,2,
+Event Ending,Predictive,5,scale_up,Predicted demand (50045 viewers at t+5) exceeded capacity. Scaled up proactively from 2 to 30 servers.,2,30,30,50045.0
+Event Ending,Predictive,6,no_action,"Predicted demand (50034 viewers at t+5, projected CPU 166.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,50034.0
+Event Ending,Predictive,7,no_action,"Predicted demand (49977 viewers at t+5, projected CPU 166.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49977.0
+Event Ending,Predictive,8,no_action,"Predicted demand (50080 viewers at t+5, projected CPU 166.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,50080.0
+Event Ending,Predictive,9,no_action,"Predicted demand (49949 viewers at t+5, projected CPU 166.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49949.0
+Event Ending,Predictive,10,no_action,"Predicted demand (49975 viewers at t+5, projected CPU 166.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49975.0
+Event Ending,Predictive,11,no_action,"Predicted demand (49982 viewers at t+5, projected CPU 166.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49982.0
+Event Ending,Predictive,12,no_action,"Predicted demand (49898 viewers at t+5, projected CPU 166.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49898.0
+Event Ending,Predictive,13,no_action,"Predicted demand (50025 viewers at t+5, projected CPU 166.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,50025.0
+Event Ending,Predictive,14,no_action,"Predicted demand (49948 viewers at t+5, projected CPU 166.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49948.0
+Event Ending,Predictive,15,no_action,"Predicted demand (49723 viewers at t+5, projected CPU 165.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49723.0
+Event Ending,Predictive,16,no_action,"Predicted demand (49850 viewers at t+5, projected CPU 166.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49850.0
+Event Ending,Predictive,17,no_action,"Predicted demand (49757 viewers at t+5, projected CPU 165.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49757.0
+Event Ending,Predictive,18,no_action,"Predicted demand (49788 viewers at t+5, projected CPU 166.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49788.0
+Event Ending,Predictive,19,no_action,"Predicted demand (49462 viewers at t+5, projected CPU 164.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49462.0
+Event Ending,Predictive,20,no_action,"Predicted demand (49425 viewers at t+5, projected CPU 164.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49425.0
+Event Ending,Predictive,21,no_action,"Predicted demand (49332 viewers at t+5, projected CPU 164.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49332.0
+Event Ending,Predictive,22,no_action,"Predicted demand (49278 viewers at t+5, projected CPU 164.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,49278.0
+Event Ending,Predictive,23,no_action,"Predicted demand (48142 viewers at t+5, projected CPU 160.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,48142.0
+Event Ending,Predictive,24,no_action,"Predicted demand (48813 viewers at t+5, projected CPU 162.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,48813.0
+Event Ending,Predictive,25,no_action,"Predicted demand (48628 viewers at t+5, projected CPU 162.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,48628.0
+Event Ending,Predictive,26,no_action,"Predicted demand (48159 viewers at t+5, projected CPU 160.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,48159.0
+Event Ending,Predictive,27,no_action,"Predicted demand (47716 viewers at t+5, projected CPU 159.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,47716.0
+Event Ending,Predictive,28,no_action,"Predicted demand (47410 viewers at t+5, projected CPU 158.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,47410.0
+Event Ending,Predictive,29,no_action,"Predicted demand (47058 viewers at t+5, projected CPU 156.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,47058.0
+Event Ending,Predictive,30,no_action,"Predicted demand (47230 viewers at t+5, projected CPU 157.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,47230.0
+Event Ending,Predictive,31,no_action,"Predicted demand (46057 viewers at t+5, projected CPU 153.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,46057.0
+Event Ending,Predictive,32,no_action,"Predicted demand (46008 viewers at t+5, projected CPU 153.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,46008.0
+Event Ending,Predictive,33,no_action,"Predicted demand (45474 viewers at t+5, projected CPU 151.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,45474.0
+Event Ending,Predictive,34,no_action,"Predicted demand (46288 viewers at t+5, projected CPU 154.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,46288.0
+Event Ending,Predictive,35,no_action,"Predicted demand (45732 viewers at t+5, projected CPU 152.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,45732.0
+Event Ending,Predictive,36,no_action,"Predicted demand (44719 viewers at t+5, projected CPU 149.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,44719.0
+Event Ending,Predictive,37,no_action,"Predicted demand (44133 viewers at t+5, projected CPU 147.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,44133.0
+Event Ending,Predictive,38,no_action,"Predicted demand (43590 viewers at t+5, projected CPU 145.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,43590.0
+Event Ending,Predictive,39,no_action,"Predicted demand (44526 viewers at t+5, projected CPU 148.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,44526.0
+Event Ending,Predictive,40,no_action,"Predicted demand (42461 viewers at t+5, projected CPU 141.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,42461.0
+Event Ending,Predictive,41,no_action,"Predicted demand (41786 viewers at t+5, projected CPU 139.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,41786.0
+Event Ending,Predictive,42,no_action,"Predicted demand (41236 viewers at t+5, projected CPU 137.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,41236.0
+Event Ending,Predictive,43,no_action,"Predicted demand (41207 viewers at t+5, projected CPU 137.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,41207.0
+Event Ending,Predictive,44,no_action,"Predicted demand (40285 viewers at t+5, projected CPU 134.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,40285.0
+Event Ending,Predictive,45,no_action,"Predicted demand (39606 viewers at t+5, projected CPU 132.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,39606.0
+Event Ending,Predictive,46,no_action,"Predicted demand (38971 viewers at t+5, projected CPU 129.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,38971.0
+Event Ending,Predictive,47,no_action,"Predicted demand (38153 viewers at t+5, projected CPU 127.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,38153.0
+Event Ending,Predictive,48,no_action,"Predicted demand (37711 viewers at t+5, projected CPU 125.7%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,37711.0
+Event Ending,Predictive,49,no_action,"Predicted demand (36761 viewers at t+5, projected CPU 122.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,36761.0
+Event Ending,Predictive,50,no_action,"Predicted demand (36012 viewers at t+5, projected CPU 120.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,36012.0
+Event Ending,Predictive,51,no_action,"Predicted demand (35556 viewers at t+5, projected CPU 118.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,35556.0
+Event Ending,Predictive,52,no_action,"Predicted demand (35042 viewers at t+5, projected CPU 116.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,35042.0
+Event Ending,Predictive,53,no_action,"Predicted demand (34079 viewers at t+5, projected CPU 113.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,34079.0
+Event Ending,Predictive,54,no_action,"Predicted demand (33642 viewers at t+5, projected CPU 112.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,33642.0
+Event Ending,Predictive,55,no_action,"Predicted demand (32454 viewers at t+5, projected CPU 108.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,32454.0
+Event Ending,Predictive,56,no_action,"Predicted demand (31768 viewers at t+5, projected CPU 105.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,31768.0
+Event Ending,Predictive,57,no_action,"Predicted demand (31300 viewers at t+5, projected CPU 104.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,31300.0
+Event Ending,Predictive,58,no_action,"Predicted demand (30672 viewers at t+5, projected CPU 102.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,30672.0
+Event Ending,Predictive,59,no_action,"Predicted demand (30139 viewers at t+5, projected CPU 100.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,30139.0
+Event Ending,Predictive,60,no_action,"Predicted demand (29088 viewers at t+5, projected CPU 97.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,29088.0
+Event Ending,Predictive,61,no_action,"Predicted demand (28207 viewers at t+5, projected CPU 94.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,28207.0
+Event Ending,Predictive,62,no_action,"Predicted demand (27476 viewers at t+5, projected CPU 91.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27476.0
+Event Ending,Predictive,63,no_action,"Predicted demand (27188 viewers at t+5, projected CPU 90.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,27188.0
+Event Ending,Predictive,64,no_action,"Predicted demand (26410 viewers at t+5, projected CPU 88.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,26410.0
+Event Ending,Predictive,65,no_action,"Predicted demand (25924 viewers at t+5, projected CPU 86.4%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,25924.0
+Event Ending,Predictive,66,no_action,"Predicted demand (24354 viewers at t+5, projected CPU 81.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,24354.0
+Event Ending,Predictive,67,no_action,"Predicted demand (23582 viewers at t+5, projected CPU 78.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,23582.0
+Event Ending,Predictive,68,no_action,"Predicted demand (23266 viewers at t+5, projected CPU 77.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,23266.0
+Event Ending,Predictive,69,no_action,"Predicted demand (22082 viewers at t+5, projected CPU 73.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,22082.0
+Event Ending,Predictive,70,no_action,"Predicted demand (21394 viewers at t+5, projected CPU 71.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,21394.0
+Event Ending,Predictive,71,no_action,"Predicted demand (20584 viewers at t+5, projected CPU 68.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,20584.0
+Event Ending,Predictive,72,no_action,"Predicted demand (19689 viewers at t+5, projected CPU 65.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,19689.0
+Event Ending,Predictive,73,no_action,"Predicted demand (19199 viewers at t+5, projected CPU 64.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,19199.0
+Event Ending,Predictive,74,no_action,"Predicted demand (18053 viewers at t+5, projected CPU 60.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,18053.0
+Event Ending,Predictive,75,no_action,"Predicted demand (17978 viewers at t+5, projected CPU 59.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,17978.0
+Event Ending,Predictive,76,no_action,"Predicted demand (16657 viewers at t+5, projected CPU 55.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,16657.0
+Event Ending,Predictive,77,no_action,"Predicted demand (16540 viewers at t+5, projected CPU 55.1%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,16540.0
+Event Ending,Predictive,78,no_action,"Predicted demand (16180 viewers at t+5, projected CPU 53.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,16180.0
+Event Ending,Predictive,79,no_action,"Predicted demand (15099 viewers at t+5, projected CPU 50.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,15099.0
+Event Ending,Predictive,80,no_action,"Predicted demand (15305 viewers at t+5, projected CPU 51.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,15305.0
+Event Ending,Predictive,81,no_action,"Predicted demand (14088 viewers at t+5, projected CPU 47.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,14088.0
+Event Ending,Predictive,82,no_action,"Predicted demand (13775 viewers at t+5, projected CPU 45.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,13775.0
+Event Ending,Predictive,83,no_action,"Predicted demand (13249 viewers at t+5, projected CPU 44.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,13249.0
+Event Ending,Predictive,84,no_action,"Predicted demand (12581 viewers at t+5, projected CPU 41.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,12581.0
+Event Ending,Predictive,85,no_action,"Predicted demand (12860 viewers at t+5, projected CPU 42.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,12860.0
+Event Ending,Predictive,86,no_action,"Predicted demand (11761 viewers at t+5, projected CPU 39.2%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,11761.0
+Event Ending,Predictive,87,no_action,"Predicted demand (11853 viewers at t+5, projected CPU 39.5%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,11853.0
+Event Ending,Predictive,88,no_action,"Predicted demand (11668 viewers at t+5, projected CPU 38.9%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,11668.0
+Event Ending,Predictive,89,no_action,"Predicted demand (11651 viewers at t+5, projected CPU 38.8%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,11651.0
+Event Ending,Predictive,90,no_action,"Predicted demand (11701 viewers at t+5, projected CPU 39.0%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,11701.0
+Event Ending,Predictive,91,no_action,"Predicted demand (11503 viewers at t+5, projected CPU 38.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,11503.0
+Event Ending,Predictive,92,no_action,"Predicted demand (9780 viewers at t+5, projected CPU 32.6%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,9780.0
+Event Ending,Predictive,93,no_action,"Predicted demand (10004 viewers at t+5, projected CPU 33.3%) is within normal operating range [30.0%, 70.0%]. Maintaining 30 servers.",30,30,30,10004.0
+Event Ending,Predictive,94,no_action,Predicted CPU (29.6%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 8879 viewers at t+5).,30,30,30,8879.0
+Event Ending,Predictive,95,no_action,Predicted CPU (21.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 6544 viewers at t+5).,30,30,30,6544.0
+Event Ending,Predictive,96,scale_down,Predicted CPU (21.6%) below 30.0% for 3 consecutive intervals (predicted 6491 viewers at t+5). Scaled down conservatively from 30 to 29 servers (removed server-30).,30,29,29,6491.0
+Event Ending,Predictive,97,no_action,Predicted CPU (22.8%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 6624 viewers at t+5).,29,29,29,6624.0
+Event Ending,Predictive,98,no_action,Predicted CPU (23.8%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 6894 viewers at t+5).,29,29,29,6894.0
+Event Ending,Predictive,99,scale_down,Predicted CPU (20.6%) below 30.0% for 3 consecutive intervals (predicted 5982 viewers at t+5). Scaled down conservatively from 29 to 28 servers (removed server-29).,29,28,28,5982.0
+Event Ending,Predictive,100,no_action,Predicted CPU (22.9%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 6402 viewers at t+5).,28,28,28,6402.0
+Event Ending,Predictive,101,no_action,Predicted CPU (23.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 6477 viewers at t+5).,28,28,28,6477.0
+Event Ending,Predictive,102,scale_down,Predicted CPU (20.6%) below 30.0% for 3 consecutive intervals (predicted 5757 viewers at t+5). Scaled down conservatively from 28 to 27 servers (removed server-28).,28,27,27,5757.0
+Event Ending,Predictive,103,no_action,Predicted CPU (23.0%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 6216 viewers at t+5).,27,27,27,6216.0
+Event Ending,Predictive,104,no_action,Predicted CPU (20.6%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 5555 viewers at t+5).,27,27,27,5555.0
+Event Ending,Predictive,105,scale_down,Predicted CPU (22.5%) below 30.0% for 3 consecutive intervals (predicted 6083 viewers at t+5). Scaled down conservatively from 27 to 26 servers (removed server-27).,27,26,26,6083.0
+Event Ending,Predictive,106,no_action,Predicted CPU (20.2%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 5241 viewers at t+5).,26,26,26,5241.0
+Event Ending,Predictive,107,no_action,Predicted CPU (21.3%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 5532 viewers at t+5).,26,26,26,5532.0
+Event Ending,Predictive,108,scale_down,Predicted CPU (21.1%) below 30.0% for 3 consecutive intervals (predicted 5475 viewers at t+5). Scaled down conservatively from 26 to 25 servers (removed server-26).,26,25,25,5475.0
+Event Ending,Predictive,109,no_action,Predicted CPU (17.5%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 4370 viewers at t+5).,25,25,25,4370.0
+Event Ending,Predictive,110,no_action,Predicted CPU (22.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 5604 viewers at t+5).,25,25,25,5604.0
+Event Ending,Predictive,111,scale_down,Predicted CPU (14.0%) below 30.0% for 3 consecutive intervals (predicted 3491 viewers at t+5). Scaled down conservatively from 25 to 24 servers (removed server-25).,25,24,24,3491.0
+Event Ending,Predictive,112,no_action,Predicted CPU (14.1%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3385 viewers at t+5).,24,24,24,3385.0
+Event Ending,Predictive,113,no_action,Predicted CPU (13.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3142 viewers at t+5).,24,24,24,3142.0
+Event Ending,Predictive,114,scale_down,Predicted CPU (16.7%) below 30.0% for 3 consecutive intervals (predicted 4000 viewers at t+5). Scaled down conservatively from 24 to 23 servers (removed server-24).,24,23,23,4000.0
+Event Ending,Predictive,115,no_action,Predicted CPU (14.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 3296 viewers at t+5).,23,23,23,3296.0
+Event Ending,Predictive,116,no_action,Predicted CPU (16.4%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3766 viewers at t+5).,23,23,23,3766.0
+Event Ending,Predictive,117,scale_down,Predicted CPU (13.1%) below 30.0% for 3 consecutive intervals (predicted 3003 viewers at t+5). Scaled down conservatively from 23 to 22 servers (removed server-23).,23,22,22,3003.0
+Event Ending,Predictive,118,no_action,Predicted CPU (23.3%) below scale-down threshold (30.0%) for 1/3 consecutive intervals (predicted 5126 viewers at t+5).,22,22,22,5126.0
+Event Ending,Predictive,119,no_action,Predicted CPU (14.1%) below scale-down threshold (30.0%) for 2/3 consecutive intervals (predicted 3111 viewers at t+5).,22,22,22,3111.0

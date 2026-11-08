@@ -1,0 +1,9 @@
+scenario,strategy,total_overload_intervals,overload_percentage,average_cpu_utilization,maximum_cpu_utilization,average_active_servers,maximum_active_servers,total_server_minutes,scale_up_operations,scale_down_operations,total_scaling_operations
+Normal Traffic,Reactive,1,0.83,56.26,101.15,10.82,13,1298,11,6,17
+Normal Traffic,Predictive,6,5.0,55.53,128.25,11.18,13,1341,9,5,14
+Sudden Traffic Spike,Reactive,1,0.83,45.35,101.2,15.65,30,1878,10,16,26
+Sudden Traffic Spike,Predictive,4,3.33,43.22,108.45,15.82,30,1898,9,18,27
+Peak Broadcasting Event,Reactive,73,60.83,124.69,184.43,26.72,30,3206,11,1,12
+Peak Broadcasting Event,Predictive,77,64.17,123.07,184.43,27.61,30,3313,6,2,8
+Event Ending,Reactive,64,53.33,119.91,2502.75,29.0,30,3480,1,8,9
+Event Ending,Predictive,64,53.33,217.0,2508.45,27.77,30,3332,1,8,9
