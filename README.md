@@ -553,6 +553,73 @@ source .venv/bin/activate
 # Run the complete Stage D3 comparison experiment
 python run_autoscaling_comparison.py
 
-# Run all automated test suites (110 tests across Stages A, B, C, D1, D2, D3)
+# Run all automated test suites (133 tests across Stages A, B, C, D1, D2, D3, and E)
 python -m unittest discover -s tests -v
 ```
+
+---
+
+## Stage E: Interactive Streamlit Dashboard
+
+### 1. Overview and Purpose
+
+Stage E provides an interactive web-based dashboard built using **Streamlit** and **Plotly** to visually analyze and benchmark:
+- Audience workload scenario profiles (Stage A).
+- Random Forest 5-minute lead predictions vs Persistence Baseline (Stage B).
+- Discrete cloud infrastructure simulation and telemetry (Stage C).
+- Comparative autoscaling performance between Reactive and Predictive policies (Stage D3).
+
+### 2. Dependency Installation
+
+To install all required dependencies (including Streamlit and Plotly) into the project virtual environment:
+
+```bash
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Install requirements
+pip install -r requirements.txt
+```
+
+### 3. Launching the Dashboard
+
+Launch the application with the Streamlit CLI:
+
+```bash
+streamlit run app.py
+```
+
+The application opens locally at `http://localhost:8501`.
+
+### 4. Dashboard Sections and Capabilities
+
+The dashboard is structured into four functional tabs alongside interactive sidebar controls:
+
+- **Global Sidebar Controls:**
+  - Scenario Selector: Switch dynamically between *Normal Traffic*, *Sudden Traffic Spike*, *Peak Broadcasting Event*, and *Event Ending*.
+  - Reference System Specifications: Display active capacity parameters (1,000 viewers/server, 70% scale-up target, 30% scale-down target, 2-minute cooldown, 2–30 server bounds).
+  - Uncapped Capacity Disclaimer: Highlights that CPU utilization exceeding 100% represents an uncapped demand-to-capacity ratio in the simulation.
+
+- **Section A: Workload Overview (`📈 A. Workload Overview`):**
+  - Interactive Plotly time-series chart showing audience viewership across 120 simulation minutes.
+  - Highlights live event windows (`event_active == True`) with shaded region annotations.
+  - Metric summary cards: Peak Viewers, Average Viewers, Total Cumulative Viewers (Viewer-Minutes), and Minimum Baseline Viewers.
+  - Raw workload data inspector table.
+
+- **Section B: Workload Prediction (`🤖 B. Workload Prediction`):**
+  - Time-series overlay comparing Actual Demand, Random Forest 5-minute lead forecasts ($t + 5$), and the Persistence Baseline ($t$).
+  - Evaluates forecast accuracy on the purged test set (minutes 93–114) with real-time KPI cards for MAE, RMSE, and error reduction percentage.
+  - Forecast residual error bar chart comparing $|V(t+5) - \hat{V}(t+5)|$ against baseline errors.
+  - Cross-scenario benchmark summary table comparing RF vs Baseline across all 4 traffic profiles.
+
+- **Section C: Autoscaling Comparison (`⚖️ C. Autoscaling Comparison`):**
+  - Head-to-head KPI comparison cards for the selected scenario: Overloaded Intervals, Average CPU Utilization, Maximum CPU Utilization, Total Server-Minutes (compute cost), Average Active Servers, Scale-Up Operations, Scale-Down Operations, and Total Operational Churn.
+  - 3-panel synchronized comparative timeline showing incoming demand, active server allocation trajectories (with scale-up marker events), and average CPU curves for both Reactive and Predictive scalers.
+  - Cross-scenario grouped bar charts for Overloaded Intervals, Average CPU Utilization (with 30%, 70%, and 100% threshold reference lines), and Server Resource Usage (Server-Minutes and Active Servers).
+
+- **Section D: Infrastructure Monitoring (`🖥️ D. Infrastructure Monitoring`):**
+  - Deep-dive operational telemetry tracking CPU Utilization (%), Memory Utilization (%), and Active Server Count over time.
+  - Highlights overload incidents ($\text{CPU} > 100\%$) with red marker annotations.
+  - Policy strategy selector to toggle between Reactive and Predictive execution traces.
+  - Interactive scaling decision event logs displaying timestamped actions, desired server counts, and trigger rationale.
+
